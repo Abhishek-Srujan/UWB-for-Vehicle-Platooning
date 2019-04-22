@@ -1,0 +1,44 @@
+\select@language {british}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Vehicle platoon using ACC\relax }}{6}{figure.caption.10}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces A typical view of a front-radar used in ACC\relax }}{6}{figure.caption.11}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Vehicle platoon using CACC\relax }}{6}{figure.caption.12}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces DSRC spectrum band and channels}}{9}{figure.caption.17}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Comparision of narrowband, spread spectrum, and ultra-wideband signal concepts}}{9}{figure.caption.18}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces IEEE 802.15.4a UWB Frequency Bands}}{10}{figure.caption.19}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces UWB PHY Frame structure}}{10}{figure.caption.20}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces UWB Symbol duration}}{11}{figure.caption.21}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Single-sided Two-way ranging}}{12}{figure.caption.22}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Double-sided Two-way ranging}}{13}{figure.caption.23}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces End to End latency when a message is transmitted from leading truck to the following truck\relax }}{23}{figure.caption.25}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces End to End latency when a message is transmitted from following truck to the leading truck\relax }}{23}{figure.caption.26}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Point to Point topology deployment diagram\relax }}{26}{figure.caption.33}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Message Exchange in Platooning Application\relax }}{27}{figure.caption.34}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Phases of test platform\relax }}{33}{figure.caption.38}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Wifi-p + UWB in platooning system\relax }}{38}{figure.caption.42}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Software Overview\relax }}{39}{figure.caption.43}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Process flow in State Communication\relax }}{41}{figure.caption.44}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Process of transmission of a message\relax }}{41}{figure.caption.45}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Process of reception of a message\relax }}{42}{figure.caption.46}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Latency Calculation - Leading Truck\relax }}{44}{figure.caption.50}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Latency Calculation - Following Truck\relax }}{45}{figure.caption.51}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces State Result Determination\relax }}{46}{figure.caption.52}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Ranging Method\relax }}{47}{figure.caption.53}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Implementation of Ranging\relax }}{47}{figure.caption.54}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Logged parameters to determine appropriate working of the system\relax }}{49}{figure.caption.55}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Channels supported by DecaWave DW1000}}{51}{figure.caption.56}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces UWB Regulations, Source: F.Leong, NXP Semiconductors\relax }}{52}{figure.caption.57}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces UWB PHY Frame Structure}}{53}{figure.caption.59}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces 802.15.4 - MAC Message Format}}{53}{figure.caption.60}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces DW1000 Symbol Durations}}{53}{figure.caption.61}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

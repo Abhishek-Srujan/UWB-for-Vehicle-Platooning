@@ -1,0 +1,154 @@
+% Original version 0.1 Thijs Nugteren
+% September 2009
+% Further updates by Joos Buijs
+\ProvidesPackage{thesis}
+
+%
+% Packages
+%
+\usepackage{a4wide}                     % Tell latex to use the room there is on the page
+\usepackage{amsmath}                    % For equation environment
+\usepackage[greek, british]{babel}      % Use british hyphenation stuff and the Greek Euro symbol
+\usepackage{fancyhdr}                   % Nice and shiny headers
+\usepackage{graphicx}                   % For images
+\usepackage{grffile}                    % So that we can use spaces in image names...
+\usepackage{pifont}                     % For ticks and crosses
+\usepackage{paralist}                   % Compact enumerate and itemize
+\usepackage[usenames,dvipsnames]{color} % Colored text
+\usepackage{moreverb}                   % To include keywords
+\usepackage{lscape}                     % Landscape page
+\usepackage{tocbibind}
+
+%\usepackage{svnkw}                      % SVN revision number (and more) in LaTeX doc.
+\usepackage{verbatim}                   % Multiline comments (using \begin{comment}
+\usepackage{datetime}                   % For formatting dates
+\usepackage{array}                      % To add extra line spaces in tables
+
+%\usepackage[colorlinks]{hyperref}
+\usepackage{color}
+\definecolor{darkred}{rgb}{0.5,0,0}
+\definecolor{darkgreen}{rgb}{0,0.5,0}
+\definecolor{darkblue}{rgb}{0,0,0.5}
+\definecolor{gray}{rgb}{0.35,0.35,0.35}
+%\hypersetup{ colorlinks,
+%linkcolor=darkblue,
+%filecolor=darkgreen,
+%urlcolor=darkred,
+%citecolor=darkblue }
+
+\usepackage[pagebackref=true,
+            colorlinks=true,
+            linkcolor=gray,
+            bookmarks=true,
+            filecolor=gray,
+            urlcolor=gray,
+            citecolor=gray
+           ]{hyperref} % Make links clickable and generate bookmarks (so you can easily click through in acroread)
+\usepackage{lineno}                   % Include line numbers
+\usepackage{longtable}                % Make tables that can cover multiple pages
+\usepackage[section]{placeins}        % Prevent floats from passing beyond \FloatBarrier; keep floats within their sections
+\usepackage{url}                      % Make it possible to define clickable urls
+\usepackage{makeidx}                  % Needed for the index
+\usepackage{hyperref}                 % For inserting PDF options (author etc.)
+\usepackage{subfig}                   % sub-figures!!! hooray...
+\captionsetup[subfloat]{position=bottom}   %captions below
+\usepackage{booktabs}                 % nicer tables, nice!
+\usepackage{rotating}                 % rotated tables and such
+
+% For the TUe style...
+% Use the package 'textpos' with the option 'absolute' to place
+% a textbox a given distance from the edge of the page
+\usepackage[absolute]{textpos}
+
+\usepackage{listings}                   % For code formatting
+\lstset{
+% From http://en.wikibooks.org/wiki/LaTeX/Packages/Listings
+% Added settings using http://ftp.snt.utwente.nl/pub/software/tex/macros/latex/contrib/listings/listings.pdf
+language=XML,                    % choose the language of the code
+basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+%numbers=left,                    % where to put the line-numbers
+%numberstyle=\footnotesize,       % the size of the fonts that are used for the line-numbers
+%stepnumber=5,                    % the step between two line-numbers. If it's 1 each line will be numbered
+%numbersep=5pt,                   % how far the line-numbers are from the code
+%backgroundcolor=\color{white},   % choose the background color. You must add \usepackage{color}
+showspaces=false,                % show spaces adding particular underscores
+showstringspaces=false,          % underline spaces within strings
+%showtabs=false,                  % show tabs within strings adding particular underscores
+frame=single,	                 % adds a frame around the code
+tabsize=2,	                     % sets default tabsize to 2 spaces
+captionpos=b,                    % sets the caption-position to bottom
+breaklines=true,                 % sets automatic line breaking
+breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+%escapeinside={\%*}{*)}           % if you want to add a comment within your code
+deletekeywords={Timestamp},      % We don't use timestamp as a keyword in our case...
+morekeywords={encoding, log, trace, event, string, boolean, float, int},
+keywordstyle=\color[rgb]{0,0,1},    %
+commentstyle=\color[rgb]{0.133,0.545,0.133}, %
+stringstyle=\color[rgb]{0.627,0.126,0.941},  %
+}
+
+%
+% Layout
+%
+
+%don't let paragraphs indent but add linespace
+%\setlength{\parindent}{0.0in}
+%\setlength{\parskip}{0.1in}
+
+% Introduce command \todo. This will print the argument in the margin
+\setlength{\marginparwidth}{2.3cm}
+\newcommand\todo[1]{
+  \-\marginpar[\raggedleft\footnotesize #1]
+  {
+    \raggedright\footnotesize #1
+  }
+}
+
+% Introduce command \ltodo. This will print the argument in the margin. It is
+% should be used for todos regarding the layout of the report
+\newcommand\ltodo[1]{
+%  \-\marginpar[\raggedleft\footnotesize #1]
+  \-\marginpar[\raggedleft\footnotesize ]
+  {
+%    \raggedright\footnotesize #1
+    \raggedright\footnotesize
+  }
+}
+
+% Introduce command \docdate
+%\newcommand{\docdate}{\today}
+
+%use this command when you want the next content to appear on an odd page
+\newcommand{\clearemptydoublepage}{
+    \newpage{\pagestyle{empty}
+    \cleardoublepage}
+}
+
+% header!
+
+%Common header attributes - see also http://en.wikibooks.org/wiki/LaTeX/Page_Layout
+\fancyfoot[RE,LO]{\doctitle}
+\fancyfoot[C]{}
+%\fancyfoot[RE,LO]{\me}
+\fancyfoot[LE,RO]{\thepage}
+\renewcommand{\footrulewidth}{0.4pt} %thickness of the decorative lines on the footer
+
+% Headers for the pages that start a chapter, also for the TOC
+\fancypagestyle{plain}{
+\fancyhead[LE,RO]{}
+\fancyhead[LO,RE]{}
+\renewcommand{\headrulewidth}{0pt} %thickness of the decorative lines on the header
+}
+
+% Headers for the other pages
+\pagestyle{fancy}{
+\fancyhead[LE,RO]{\slshape \leftmark} % \rightmark = represent section heading
+\fancyhead[LO,RE]{\slshape } % \leftmark = represent chapter heading
+}
+
+% Line numbers every 5 lines
+\modulolinenumbers[5]
+
+%\tick and \cross
+\newcommand{\tick}{\textcolor{darkgreen}{\ding{51}}}
+\newcommand{\cross}{\textcolor{darkred}{\ding{55}}}

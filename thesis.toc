@@ -1,0 +1,92 @@
+\select@language {british}
+\contentsline {chapter}{Contents}{\textlatin {vii}}{chapter*.4}
+\contentsline {chapter}{List of Figures}{\textlatin {ix}}{chapter*.5}
+\contentsline {chapter}{List of Tables}{\textlatin {x}}{chapter*.6}
+\contentsline {chapter}{Nomenclature}{\textlatin {x}}{chapter*.6}
+\contentsline {chapter}{Listings}{\textlatin {xiii}}{chapter*.8}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Context}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Motivation}{2}{section.1.2}
+\contentsline {section}{\numberline {1.3}Problem Statement}{3}{section.1.3}
+\contentsline {section}{\numberline {1.4}Research Questions}{3}{section.1.4}
+\contentsline {section}{\numberline {1.5}Approach}{3}{section.1.5}
+\contentsline {section}{\numberline {1.6}Thesis Overview}{4}{section.1.6}
+\contentsline {chapter}{\numberline {2}Background}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Intelligent Transportation System}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Vehicle Platooning}{5}{section.2.2}
+\contentsline {subsubsection}{Adaptive Cruise Control(ACC)}{5}{section*.9}
+\contentsline {subsubsection}{Cooperative Adaptive Cruise Control}{6}{section*.13}
+\contentsline {subsubsection}{Automated Highway System (AHS)}{6}{section*.14}
+\contentsline {subsubsection}{Advantages and Risks of Platooning}{7}{section*.15}
+\contentsline {subsubsection}{Vehicle Platooning Control Functions}{7}{section*.16}
+\contentsline {section}{\numberline {2.3}Vehicular RF Channel}{7}{section.2.3}
+\contentsline {section}{\numberline {2.4}WiFi-p}{8}{section.2.4}
+\contentsline {section}{\numberline {2.5}UWB}{9}{section.2.5}
+\contentsline {section}{\numberline {2.6}UWB Ranging}{12}{section.2.6}
+\contentsline {section}{\numberline {2.7}LPCXpresso4337 development board}{14}{section.2.7}
+\contentsline {section}{\numberline {2.8}DecaWave DW1000}{14}{section.2.8}
+\contentsline {chapter}{\numberline {3}Related Work}{17}{chapter.3}
+\contentsline {section}{\numberline {3.1}Summary}{17}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}UWB for inter-vehicle communication}{17}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Interference of UWB on narrowband communication and vice-versa}{18}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}UWB Ranging}{19}{subsection.3.1.3}
+\contentsline {section}{\numberline {3.2}Novelty}{20}{section.3.2}
+\contentsline {subsubsection}{Limitations}{20}{section*.24}
+\contentsline {chapter}{\numberline {4}Test Platform Requirements}{21}{chapter.4}
+\contentsline {section}{\numberline {4.1}Communication Performance Metrics}{21}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Packet Error Ratio}{21}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Message Error Ratio}{22}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Packet Latency}{22}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}End-to-End Latency/Message Latency}{23}{subsection.4.1.4}
+\contentsline {subsection}{\numberline {4.1.5}Reliable and Unreliable link}{24}{subsection.4.1.5}
+\contentsline {section}{\numberline {4.2}Measurement Goals}{24}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Research Question RQ\_01}{24}{subsection.4.2.1}
+\contentsline {subsubsection}{Measurement Goal MG\_Interference}{24}{section*.27}
+\contentsline {subsubsection}{Measurement Goal MG\_Distance\_Between\_Transceivers}{24}{section*.28}
+\contentsline {subsubsection}{Measurement Goal MG\_Worst\_Case\_Interference}{24}{section*.29}
+\contentsline {subsection}{\numberline {4.2.2}Research Question RQ\_02}{24}{subsection.4.2.2}
+\contentsline {subsubsection}{Measurement Goal MG\_Speed\_Or\_Acceleration\_Difference}{24}{section*.30}
+\contentsline {subsubsection}{Measurement Goal MG\_Nulls}{25}{section*.31}
+\contentsline {subsection}{\numberline {4.2.3}Research Question RQ\_03}{25}{subsection.4.2.3}
+\contentsline {subsubsection}{Measurement Goal MG\_Ranging\_Accuracy}{25}{section*.32}
+\contentsline {subsection}{\numberline {4.2.4}Research Question RQ\_04}{25}{subsection.4.2.4}
+\contentsline {section}{\numberline {4.3}Network Topology}{25}{section.4.3}
+\contentsline {section}{\numberline {4.4}Data Communication Primitive}{26}{section.4.4}
+\contentsline {section}{\numberline {4.5}Measurement Plan}{28}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Measurement Plan MP\_Interference}{28}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Measurement Plan MP\_Speed\_Or\_Acceleration\_Difference}{28}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}Measurement Plan MP\_Distance}{28}{subsection.4.5.3}
+\contentsline {section}{\numberline {4.6}Test Platform Requirements}{30}{section.4.6}
+\contentsline {section}{\numberline {4.7}Post Processing Requirements}{30}{section.4.7}
+\contentsline {chapter}{\numberline {5}Test Platform Implementation}{33}{chapter.5}
+\contentsline {section}{\numberline {5.1}Test Platform Design}{33}{section.5.1}
+\contentsline {section}{\numberline {5.2}Important Design Choices}{34}{section.5.2}
+\contentsline {section}{\numberline {5.3}Architecture}{38}{section.5.3}
+\contentsline {section}{\numberline {5.4}Implementation}{39}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}State Connection}{39}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}State Communication}{40}{subsection.5.4.2}
+\contentsline {subsubsection}{Transmission}{41}{section*.47}
+\contentsline {subsubsection}{Reception}{42}{section*.48}
+\contentsline {subsubsection}{Latency Calculation}{43}{section*.49}
+\contentsline {subsection}{\numberline {5.4.3}State Result Communication}{43}{subsection.5.4.3}
+\contentsline {subsection}{\numberline {5.4.4}State Finish}{45}{subsection.5.4.4}
+\contentsline {subsection}{\numberline {5.4.5}Ranging Method}{46}{subsection.5.4.5}
+\contentsline {subsection}{\numberline {5.4.6}Ranging Implementation}{46}{subsection.5.4.6}
+\contentsline {subsection}{\numberline {5.4.7}Cross Verification of Design}{48}{subsection.5.4.7}
+\contentsline {subsection}{\numberline {5.4.8}MATLAB Implementation}{49}{subsection.5.4.8}
+\contentsline {chapter}{\numberline {6}Duty Cycle Requirements for UWB}{51}{chapter.6}
+\contentsline {section}{\numberline {6.1}Low Duty Cycle}{52}{section.6.1}
+\contentsline {section}{\numberline {6.2}UWB PHY and Platooning Application}{53}{section.6.2}
+\contentsline {section}{\numberline {6.3}LDC Calculation for the Truck Platooning Application}{54}{section.6.3}
+\contentsline {chapter}{\numberline {7}Experiments and Results}{57}{chapter.7}
+\contentsline {chapter}{\numberline {8}Conclusion and Future work}{59}{chapter.8}
+\contentsline {chapter}{References}{61}{chapter*.63}
+\contentsline {chapter}{Appendix}{65}{chapter*.63}
+\contentsline {chapter}{\numberline {A}Configurations for Measurement Plan MP\_Interference}{65}{appendix.A}
+\contentsline {chapter}{\numberline {B}Configurations for Measurement Plan MP\_Speed\_Or\_Acceleration\_Difference}{67}{appendix.B}
+\contentsline {chapter}{\numberline {C}Configurations for Measurement Plan MP\_Distance}{68}{appendix.C}
+\contentsline {section}{\numberline {C.1}110 Kbps}{68}{section.C.1}
+\contentsline {section}{\numberline {C.2}850 Kbps}{68}{section.C.2}
+\contentsline {section}{\numberline {C.3}6.8 Mbps}{68}{section.C.3}
+\contentsline {section}{\numberline {C.4}Antenna Rotation}{69}{section.C.4}
+\contentsline {chapter}{\numberline {D}Parameter encodings for configurations}{70}{appendix.D}

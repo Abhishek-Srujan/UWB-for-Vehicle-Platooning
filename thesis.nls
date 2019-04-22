@@ -1,0 +1,112 @@
+\begin{thenomenclature} 
+
+ \nomgroup{A}
+
+  \item [{ABS}]\begingroup Anti-lock Braking System\nomeqref {1.0}
+		\nompageref{1}
+  \item [{ADAS}]\begingroup Advanced Driver Assistance Systems\nomeqref {1.0}
+		\nompageref{1}
+  \item [{API}]\begingroup Application Programming Interface\nomeqref {5.0}
+		\nompageref{33}
+  \item [{APTS}]\begingroup Advanced Public Transportation Systems\nomeqref {2.0}
+		\nompageref{5}
+  \item [{ATIS}]\begingroup Advanced Traveler Information Systems\nomeqref {2.0}
+		\nompageref{5}
+  \item [{ATMS}]\begingroup Advanced Transportation Management Systems\nomeqref {2.0}
+		\nompageref{5}
+  \item [{BER}]\begingroup Bit Error Rate\nomeqref {3.0}\nompageref{17}
+  \item [{BPM}]\begingroup Burst Position Modulation\nomeqref {2.0}
+		\nompageref{5}
+  \item [{CACC}]\begingroup Cooperative Adaptive Cruise Control\nomeqref {2.0}
+		\nompageref{5}
+  \item [{CACC}]\begingroup Cooperative-Adaptive Cruise Control\nomeqref {1.0}
+		\nompageref{1}
+  \item [{CIRP}]\begingroup Channel Impulse Response Power\nomeqref {4.0}
+		\nompageref{21}
+  \item [{CRC}]\begingroup Cyclic Redundancy Check\nomeqref {5.0}
+		\nompageref{33}
+  \item [{CSMA}]\begingroup Code Division Multiple Access\nomeqref {3.0}
+		\nompageref{17}
+  \item [{CSS}]\begingroup Chirp Signal Spectrum\nomeqref {4.0}
+		\nompageref{21}
+  \item [{DAA}]\begingroup Detect and Avoid\nomeqref {3.0}
+		\nompageref{17}
+  \item [{DAA}]\begingroup Detect and Avoid\nomeqref {6.0}
+		\nompageref{51}
+  \item [{DPS}]\begingroup Dynamic Preamble Select\nomeqref {2.0}
+		\nompageref{5}
+  \item [{DS-TWR}]\begingroup Double Sided Two Way Ranging\nomeqref {5.0}
+		\nompageref{33}
+  \item [{DS-TWR}]\begingroup Double-sided two-way ranging\nomeqref {2.0}
+		\nompageref{5}
+  \item [{DSRC}]\begingroup Dedicated Short-Range Communications\nomeqref {2.0}
+		\nompageref{5}
+  \item [{EIRP}]\begingroup Equivalent Isotropically Radiated Power\nomeqref {3.0}
+		\nompageref{17}
+  \item [{EIRP}]\begingroup Equivalent Isotropically Radiated Power\nomeqref {6.0}
+		\nompageref{51}
+  \item [{ESP}]\begingroup Electronic Stabilization Program\nomeqref {1.0}
+		\nompageref{1}
+  \item [{FEC}]\begingroup Forward error correction\nomeqref {2.0}
+		\nompageref{5}
+  \item [{GPIO}]\begingroup General Purpose Input/Output Pin\nomeqref {5.0}
+		\nompageref{33}
+  \item [{GPS}]\begingroup Global Positioning Systems\nomeqref {2.0}
+		\nompageref{5}
+  \item [{ICT}]\begingroup Information and Communication Technology\nomeqref {2.0}
+		\nompageref{5}
+  \item [{IRQ}]\begingroup Interrupt Request\nomeqref {5.0}
+		\nompageref{33}
+  \item [{ISO}]\begingroup International Standards Organization\nomeqref {2.0}
+		\nompageref{5}
+  \item [{ITS}]\begingroup Intelligent Transport System\nomeqref {1.0}
+		\nompageref{1}
+  \item [{ITS}]\begingroup Intelligent Transportation System\nomeqref {2.0}
+		\nompageref{5}
+  \item [{IVC}]\begingroup Inter Vehicle Communication\nomeqref {1.0}
+		\nompageref{1}
+  \item [{IVC}]\begingroup Inter-vehicle Communication\nomeqref {3.0}
+		\nompageref{17}
+  \item [{LDC}]\begingroup Low Duty Cycle\nomeqref {6.0}\nompageref{51}
+  \item [{LOS}]\begingroup Line Of Sight\nomeqref {4.0}\nompageref{21}
+  \item [{PAC}]\begingroup Preamble Accumulation Count\nomeqref {4.0}
+		\nompageref{21}
+  \item [{PER}]\begingroup Packet Error Ratio\nomeqref {1.0}
+		\nompageref{1}
+  \item [{PRF}]\begingroup Pulse Repetition Frequency\nomeqref {1.0}
+		\nompageref{1}
+  \item [{PRR}]\begingroup Packet Reception Ratio = 100 - PER\nomeqref {4.0}
+		\nompageref{21}
+  \item [{PSM}]\begingroup Platoon Status Message\nomeqref {4.0}
+		\nompageref{21}
+  \item [{PSR}]\begingroup Preamble Symbol Repetitions\nomeqref {2.0}
+		\nompageref{5}
+  \item [{RS}]\begingroup Reed-Solomon\nomeqref {2.0}\nompageref{5}
+  \item [{SECDED}]\begingroup Single-Error-Correct-Double-Error-Detect\nomeqref {2.0}
+		\nompageref{5}
+  \item [{SFD}]\begingroup Start of the frame Delimiter\nomeqref {1.0}
+		\nompageref{1}
+  \item [{SIC}]\begingroup Successive Interference Cancellation\nomeqref {3.0}
+		\nompageref{17}
+  \item [{SIR}]\begingroup Signal to Interference Ratio\nomeqref {3.0}
+		\nompageref{17}
+  \item [{SPI}]\begingroup Serial Peripheral Interface Bus\nomeqref {5.0}
+		\nompageref{33}
+  \item [{SS-TWR}]\begingroup Single-sided two-way ranging\nomeqref {2.0}
+		\nompageref{5}
+  \item [{TOF}]\begingroup Time of Flight\nomeqref {5.0}\nompageref{33}
+  \item [{TP-UWB}]\begingroup Test Platform for evaluation and analysis of UWB\nomeqref {1.0}
+		\nompageref{1}
+  \item [{UMTS}]\begingroup Universal Mobile Telecommunication System\nomeqref {3.0}
+		\nompageref{17}
+  \item [{UWB}]\begingroup Ultra-Wide Band\nomeqref {1.0}\nompageref{1}
+  \item [{V2I}]\begingroup Vehicle-to-Infrastructure\nomeqref {2.0}
+		\nompageref{5}
+  \item [{V2V}]\begingroup Vehicle to Vehicle Communication\nomeqref {1.0}
+		\nompageref{1}
+  \item [{V2V}]\begingroup Vehicle-to-Vehicle\nomeqref {2.0}
+		\nompageref{5}
+  \item [{VFM}]\begingroup Vehicle Following Message\nomeqref {4.0}
+		\nompageref{21}
+
+\end{thenomenclature}

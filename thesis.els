@@ -1,0 +1,10 @@
+\begin{thenomenclature} 
+
+ \nomgroup{A}
+
+  \item [{$\alpha_{eff}$}]\begingroup Effective absorptance due to the curvature of receiver tubes\nomeqref {1.0}
+		\nompageref{1}
+  \item [{$\alpha_{eff}$}]\begingroup Effective absorptance due to the curvature of receiver tubes\nomeqref {2.2}
+		\nompageref{7}
+
+\end{thenomenclature}

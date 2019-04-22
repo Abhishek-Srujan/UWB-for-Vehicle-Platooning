@@ -1,0 +1,428 @@
+This chapter consists of the design approach for tubular receivers and it also discusses the method followed in this thesis.
+\section{Design Steps}
+\begin{enumerate}
+	\item The design method involves the calculation of the incident thermal power to the receiver as a base. The incident receiver thermal power can be calculated with the desired electric power output, power block efficiency, storage hours, solar multiple and also receiver thermal efficiency. In order to design the receiver, the receiver efficiency is initially assumed to calculate the receiver thermal power.
+	\item Once the receiver thermal power is calculated, the type of receiver fluid needs to be selected.
+	\item Based on the type of receiver heat transfer fluid, the allowable flux limit for the receiver can be chosen. After fixing the allowable flux limit, the receiver size can be calculated.
+	\item Now the heat losses from the receiver can be calculated with the receiver aperture area and the actual receiver thermal efficiency is calculated. Hence the receiver needs to be resized with actual receiver efficiency.
+	\item The next step is to design the receiver geometry in order to obtain the maximum receiver thermal efficiency and the low thermal stresses in the receiver. The aspect ratio has to be chosen considering the factor of minimum thermal losses in the receiver. If the aspect ratio is fixed then the height and diameter of the receiver can be calculated.
+	\item For the cavity receivers, the additional parameters like cavity opening angle, aperture to total height ratio and cavity inclination should be fixed to calculate the receiver geometry.
+	\item The tube diameter selection is one of the main design parameter, which needs to be selected in such a way that pressure loss is minimized and receiver efficiency is increased. The smaller the diameter, the higher the receiver efficiency and also the higher the pressure losses. Therefore, a tradeoff between the receiver efficiency and the pressure loss should be considered in order to have a better overall efficiency. One such option is comparing with the energy gained by increasing the receiver efficiency and the energy loss by increasing the pressure loss and selecting the tube diameter with respect to net energy gain.
+	\item The next step is selecting the tube thickness. The lower the tube thickness, the higher the receiver thermal efficiency, but it is limited by typical values of commercial tubes.
+	\item Then the number of panels and fluid flow path can be selected and the design mass flow rate is calculated. Then the maximum design flow velocity is fixed and then the design should be adjusted with the maximum design flow velocity in the receiver tubes. 
+	\item Tower height sizing can be done with the receiver thermal power and the type of solar field.
+\end{enumerate}
+\begin{figure}[h!]
+	\includegraphics{figures/Design_method_receiver}
+	\centering
+	\caption{Receiver design methodology for tubular receivers}	
+\end{figure}
+\section{General Receiver Design Model}
+\subsection{Receiver thermal power}
+As it is explained in the design steps, the first step is to calculate the receiver thermal power. To calculate receiver thermal power, thermal power required for the power block is obtained from power block model, solar multiple is obtained from the solar multiple model and receiver thermal efficiency is assumed. Then the receiver thermal power is calculated by \\\\
+\begin{equation}
+	P_{th,rec} = \frac{P_{th,pb}} {\eta_{rec,assumed}} \cdot SM
+\end{equation}
+where $P_{th,rec}$ is the incident receiver thermal power,$P_{th,pb}$ the thermal power required for power block, $\eta_{rec,assumed}$ the assumed receiver thermal efficiency and $SM$ the solar multiple.
+\subsection{Receiver sizing}
+Once the receiver thermal power is calculated, receiver fluid and receiver material should be selected. After selecting receiver fluid type and material, the allowable peak flux can be fixed. Generally, the allowable peak flux for molten salt is 0.85 $MW/m^2$ and 1.3 $MW/m^2$ for liquid sodium. The average allowable flux can be calculated one half to one third of the peak allowable flux. Then the area of the receiver can be calculated by \\\\
+\begin{equation}
+	A_{rec} = \frac {P_{th,rec}} {(Q_{peak,flux} /2)}
+\end{equation}
+where $A_{rec}$ is the area of the receiver and $Q_{peak,flux}$ the allowable peak flux of the receiver.\\\\
+But for the cavity receiver, the receiver area is 25 percent\cite{Falcone.1986} larger because of re-radiation. So for cavity receiver, average allowable flux can be calculated accordingly.
+\subsection{Calculation of HTF properties}
+In the current model, all the HTF properties are calculated with the function of mean fluid temperatures. The correlation for the properties is implemented for molten salt and liquid sodium HTF. But it can be expanded to include other HTF also. In order to simulate some new HTF as receiver fluid, there is provision to specify the value of all HTF properties. The properties needed for the receiver model are specific heat, density, dynamic viscosity and thermal conductivity. The correlation used to calculate the HTF properties are given below:\\\\
+\subsubsection{Molten salt (Solar salt)}
+\begin{itemize}
+	\item Density as a function of temperature:\\\\
+	\begin{equation}
+		\rho = 2090 - (0.636 \cdot T_{mean,htf})
+	\end{equation}
+	\item Specific heat as a function of temperature:\\\\
+	\begin{equation}
+	C_{p} = 1443 + 0.172 \cdot T_{mean,htf}
+	\end{equation}
+	\item Absolute viscosity as a function of temperature:\\\\
+	\begin{equation}
+	\mu = (22.714 - (0.120 \cdot T_{mean,htf}) + (2.281 \times 10^{-4} \cdot T_{mean,htf}^2) - (1.474 \times 10^{-7} \cdot T_{mean,htf}^3)) / 10^3
+	\end{equation}
+	\item Thermal conductivity as a function of temperature:\\\\
+	\begin{equation}
+	k = 0.443 + 1.9 \cdot 10^{-4} \cdot T_{mean,htf}
+	\end{equation}
+\end{itemize}
+\subsubsection{Liquid sodium}
+\begin{itemize}
+	\item Density as a function of temperature:\\\\
+	\begin{equation}
+	\rho = 1015.13 - (0.23393 \cdot T_{mean,htf}) - (0.305 \times 10^{-5} \cdot T_{mean,htf}^2
+	\end{equation}
+	\item Specific heat as a function of temperature:\\\\
+	\begin{equation}
+	C_{p} = -(3.001 \times 10^6 \cdot T_{mean,htf}^{-2}) + 1658 - (0.8479 \cdot T_{mean,htf}) + (4.454 \times 10^{-4} \cdot T_{mean,htf}^2)
+	\end{equation}
+	\item Absolute viscosity as a function of temperature:\\\\
+	\begin{equation}
+	\mu = \exp((556.835 / T_{mean,htf}) - (0.3958 \cdot \ln (T_{mean,htf})) - 6.4406)
+	\end{equation}
+	\item Thermal conductivity as a function of temperature:\\\\
+	\begin{equation}
+	k = 110 - (0.0648 \cdot T_{mean,htf} + (1.16 \cdot 10^{-5} \cdot T_{mean,htf}^2)
+	\end{equation}
+\end{itemize}
+where $T_{mean,htf}$ is the mean fluid temperature in degree Celsius, $\rho$ the density of the fluid, $C_{p}$ the specific heat of the fluid,
+$\mu$ the absolute viscosity of the fluid and $k$ the thermal conductivity of the fluid.
+\subsection{Receiver surface temperature calculation}
+It is assumed that the receiver surface has uniform surface temperature. The heat transfer through tube walls is calculated and it includes conduction through the tube wall thickness and then convective heat transfer to the receiver fluid. Surface temperature of the receiver is calculated by calculating resistance due to conduction and convection. The thermal power in the receiver fluid can be obtained by:\\\\
+\nomenclature[S]{R}{Thermal resistance \nomunit{K/W}}
+\nomenclature[Z]{htf}{Heat transfer fluid}
+\nomenclature[Z]{cond}{Conduction}
+\begin{equation}
+\dot Q_{fluid} = \frac {T_{s,ave}-T_{htf,ave}}{R_{cond}+R_{conv}}
+\end{equation}
+where $ \dot Q_{fluid}$ is thermal energy absorbed by the receiver fluid, $T_{htf,ave}$ the average temperature of the receiver fluid, $R_{cond}$ the resistance due to conduction through tube walls, $R_{conv}$ the resistance due to internal convection between tube wall and the receiver fluid
+\nomenclature[S]{r}{Radius \nomunit{m}}
+\nomenclature[S]{n}{Count \nomunit{-}}
+\nomenclature[Z]{tube}{Receiver tube}
+\nomenclature[Z]{outer}{Outer}
+\nomenclature[Z]{inner}{Inner}
+\begin{equation}
+R_{cond} = \frac{ln(r_{tube,outer}/r_{tube,inner})}{2\cdot \pi\cdot H_{rec}\cdot k_{tube}\cdot n_{tube}}
+\end{equation}
+where $ r_{tube,outer}$ is radius of the receiver outer tube, $ r_{tube,inner}$ the radius of the receiver inner tube, $ k_{tube}$ the thermal conductivity of the receiver tube, $ n_{tube}$ the total number of tubes in the receiver.
+\begin{equation}
+R_{conv} = \frac {1}{h_{inner}\cdot \pi\cdot r_{tube,inner}\cdot H_{rec}\cdot n_{tubes}}
+\end{equation}
+where $ h_{inner} $ is heat transfer coefficient of internal convection between tube wall and the receiver fluid.
+\begin{equation}
+h_{inner}=Nu\cdot k_{fluid}/L_c
+\end{equation}
+\textbf{{Second Petukhov equation \cite{Cengel.2003}}:}
+\nomenclature[S]{f}{Darcy friction factor \nomunit{-}}
+\begin{equation}
+Nu= \frac{(f/8)RePr}{1.07+12.7(f/8)^{0.5}(Pr^{2/3}-1)}
+\end{equation}
+where $f = (0.790lnRe-1.64)^{-2}$ for smooth tubes valid for $10^4<Re<10^6 $ and for rough tubes $f = \frac{1}{\sqrt{f}}=-2.0\log{\left(\frac{\epsilon/D}{3.7}+\frac{2.51}{Re\sqrt{f}}\right)}$ where $\epsilon/D $ is relative roughness.\\\\
+Using these equations, surface temperature of the receiver is calculated.
+\subsection{Mass flow rate calculation}
+The design mass flow rate of the receiver fluid is calculated with the incident receiver thermal power and the thermal efficiency of the receiver. The minimum limitation of mass flow rate to avoid the damage of the receiver is to make sure that the flow is turbulent. So it can be calculated with the Reynold's number greater than or equal to 4000. The mass flow rate is calculated by \\\\
+\nomenclature[S]{$\dot m$}{Mass flow rate \nomunit {kg/s}}
+\nomenclature[G]{$\eta$}{Efficiency \nomunit{-}}
+\begin{equation}
+\dot m_{htf}= \frac{\dot Q_{inc,rec}\cdot \eta_{rec}}{cp_{htf,ave}\cdot (T_{htf,hot}-T_{htf,cold})}
+\end{equation}
+where $\dot m_{htf}$ is mass flow rate of the receiver fluid, $\dot Q_{inc,rec}$ the incident receiver thermal power from solar field, $\eta_{rec}$ the receiver thermal efficiency, $cp_{htf,ave}$ the specific heat of the receiver fluid, $T_{htf,hot}$ the outlet temperature of the hot receiver fluid, $T_{htf,cold}$ the inlet temperature of the cold receiver fluid.
+\subsubsection{Pressure loss and pump power calculation}
+The pressure drop across the receiver tube is given the following equation. The friction factor equations are discussed in the internal convective heat transfer section. The pressure loss across the bends are not shown here. It can be calculated by replacing $ \frac{H_{rec}}{D_{tube,inner}} $ term in the pressure loss across tube with equivalent length produced by the tube bends.
+\nomenclature[S]{$\Delta$ P}{Pressure difference \nomunit{$N/m^2$}}
+\nomenclature[S]{v}{Velocity \nomunit {m/s}}
+\begin{equation}
+\Delta P_{tube}=\rho_{fluid} \cdot f\cdot \frac{H_{rec}}{D_{tube,inner}} \cdot \frac{v_{fluid}^2}{2}
+\end{equation}
+where $\Delta P_{tube}$ is pressure loss through the receiver tube, $\rho_{fluid}$ the density of the receiver fluid, $v_{fluid}$ the velocity of the receiver fluid. The pressure drop from pumping up to the receiver is given by
+\nomenclature[S]{g}{Acceleration due to gravity \nomunit {$m/s^2$}}
+\nomenclature[Z]{tower}{Solar tower}
+\begin{equation}
+\Delta P_{tower}=\rho_{fluid}\cdot g \cdot H_{tower}
+\end{equation}
+where $\Delta P_{tower}$ is pressure loss through the pumping of receiver fluid upto the tower, $H_{tower}$ the height of the tower. The net presure drop across the receiver panels are given by 
+\nomenclature[Z]{net}{Net}
+\begin{equation}
+\Delta P_{net}=(\Delta P_{tube}\cdot  n_{panels}/n_{flow path})+\Delta P_{tower}
+\end{equation}
+where $\Delta P_{net}$ is net pressure loss through the receiver panels, $n_{panels}$ the number of panels in the receiver, $n_{flow path}$ the number of flow path in the receiver. The energy required by the pump to move the receiver fluid through the receiver is given by
+\nomenclature[S]{W}{Power \nomunit{W}}
+\begin{equation}
+\dot W_{pump}= \frac {\Delta P_{net}\cdot v_{fluid}\cdot \frac {\pi D_{tube,inner}^2}{4}\cdot n_{tubes,panel}}{\eta_{pump}}
+\end{equation}
+where $\dot W_{pump}$ is parasitic pump power required for the receiver, $n_{tubes,panel}$ the number of tubes per panel in the receiver, $\eta_{pump}$ the pump efficiency \\
+\section{External Receiver Design Model}
+\subsection{Receiver geometry design}
+For the external receiver, the receiver outer geometry design includes diameter and height of the receiver. In order to design the outer geometry, the parameter receiver aspect ratio (Height to diameter ratio) should be introduced. Usually for external receiver, the receiver aspect ratio lies between 1 to 2. In the current model, the default value of receiver aspect ratio is set as 1.5. The area of the receiver can be written as \\\\
+\begin{equation}
+	A_{rec} = \pi \cdot D_{rec} \cdot H_{rec} \cdot \pi / 2
+\end{equation}
+The above equation can be reformulated in terms of receiver aspect ratio and the receiver geometry can be calculated as\\\\
+\begin{equation}
+	D_{rec} = \sqrt{A_{rec} / (\pi \cdot {h/d}_{ratio} \cdot \pi / 2)}
+\end{equation}
+\begin{equation}
+	H_{rec} = {h/d}_{ratio} \cdot D_{rec}
+\end{equation}
+where $A_{rec}$ is the area of the receiver, $D_{rec}$ the diameter of the receiver, $H_{rec}$ the height of the receiver, ${h/d}_{ratio}$ the receiver aspect ratio and $\pi / 2$ the factor due to the curvature of the receiver tubes in the receiver outer geometry.\\\\
+\subsection{Receiver tube and panels design}
+In order to design receiver tube and panels, one should select the outer diameter of the receiver tube, thickness of the tube and the number of flow path in the receiver. The outer diameter of the receiver tube usually varies between 20 mm to 45 mm. Usually, the outer diameter of the receiver tube will vary with respect to the receiver thermal power. Because of the fact that the higher receiver thermal power lead to higher cross sectional area so that the velocity will be within the allowable limit.\\\\
+In the current model, in order to have scalability of power plant, the linear correlation for the default value of outer diameter of receiver tube is developed. The linear correlation is developed with the two extreme cases of current operating power plant. One is 10 MW power plant with 2 hours of storage and the other is 100 MW power plant with 14 hours of thermal storage. The respective outer diameter of the receiver tube is 12.7 mm and 40.9 mm. So the linear correlation is developed for outer diameter of the receiver tube with respect to receiver thermal power. The following correlation is used as a default value for outer diamter of the receiver tube. \\\\
+\begin{equation}
+	d_{tube,outer} = (0.00004827128 \cdot P_{th,rec}/1000000) + 0.01062434
+\end{equation}
+where $d_{tube,outer}$ is the outer diameter of the receiver tube and  $P_{th,rec}$ the incident receiver thermal power in W.\\\\
+The default value for the thickness of the tube is selected as 2 mm. The number of fluid path is usually two for molten salt receiver and so the default value is selected as two in the current model. Now the total number of receiver tubes in the receiver can be calculated as\\\\
+\begin{equation}
+	n_{tube,rec} = (\pi \cdot D_{rec}) / d_{tube,outer}
+\end{equation}
+where $n_{tube,rec}$ the total number of receiver tubes in receiver, $D_{rec}$ the diameter of the receiver and $d_{tube,outer}$ the outer diameter of the receiver tube.\\\\
+Now the number of panels in the receiver can be calculated by calculating the number of reciever tubes per panel. The number of tubes per pancel can be calculated by knowing the cross sectional area of the fluid which are given below:\\\\
+\begin{equation}
+	n_{tube,panel} = A_{sec} / (\pi \cdot (d_{tube,inner} / 2)^2 \cdot n_{flowpath})
+\end{equation}
+where $n_{tube,panel}$ the number of receiver tubes per panel,$A_{sec}$ the cross sectional area of the fluid flow path, $d_{tube,inner}$, the inner diameter of the receiver tube and $n_{flowpath}$ the number of fluid flow path.
+\begin{equation}
+	A_{sec} = \dot m_{fluid} / (\rho_{fluid} \cdot v_{fluid})
+\end{equation}
+where $\dot m_{fluid}$ the mass flow rate of the receiver fluid, $\rho_{fluid}$ the density of the receiver fluid and the $v_{fluid}$ the velocity of the receiver fluid.\\\\
+Once the number of tubes per panel is calculated, the number of receiver panels in the receiver can be calculated as\\\\
+\begin{equation}
+	n_{panels} = n_{tube,rec} / n_{tube,panel}
+\end{equation}
+But if the number of flow path is even, number of panels should also be even. While designing, it should be taken care. In the current model, there is a condition to check and adjust number of panels to the very next even number accordingly. \\\\
+\subsection{Tower height design}
+Currently, there are no reliable tower height model in the literature. In all the commercial design softwares, tower height is given as user input. In our current model, though user can give input for tower height, the default values are selected within toolchain if no value is provided. Falcone has given the graph for tower height with respect to the receiver thermal power and so the correlation is developed by curve fitting with his values. It can act as default values for tower height in the developed receiver model. The graph by Falcone is shown below. The correlation for calculating tower height for surround field is given below:\\\\
+\begin{equation}
+	H_{tower,min} = 36.30075 + (0.3013896 \cdot P_{th,rec}) - (0.0001004369 \cdot P_{th,rec}^2)
+\end{equation}
+\begin{equation}
+	H_{tower,max}= 54.91579 + (0.3070526 \cdot P_{th,rec}) - (0.0001039793 \cdot P_{th,rec}^2)
+\end{equation}       
+\begin{equation}
+	H_{tower} = (H_{tower,min} + H_{tower,max}) / 2
+\end{equation}
+where $H_{tower,min}$ the minimum tower height for the patricular receiver thermal power, $H_{tower,max}$ the maximum tower height for the patricular receiver thermal power and $H_{tower}$ the tower height for the patricular receiver thermal power.
+
+\subsection{Receiver thermal efficiency}
+The receiver thermal efficiency is calculated by calculating all thermal losses from the receiver.\\\\
+\begin{equation}
+	\eta_{rec} = 1 - (Q_{total,loss} / P_{th,rec})
+\end{equation}
+where $\eta_{rec}$ is the receiver thermal efficiency and $Q_{total,loss}$ the total heat loss from the receiver.
+
+\subsection{Total heat loss}
+The heat loss model includes heat loss due to reflection, external convection and radiation. The conduction to the back side of the receiver panel is small compared to other losses and it is neglected.\\\\
+\nomenclature[S]{$\dot Q$}{Heat energy \nomunit{KW}}
+\nomenclature[Z]{tot}{Total}
+\nomenclature[Z]{ref}{Reflection}
+\nomenclature[Z]{conv}{Convection}
+\nomenclature[Z]{rad}{Radiation}
+\begin{equation}
+\dot Q_{loss,tot} = \dot Q_{loss,ref}+ \dot Q_{loss,conv} + \dot Q_{loss,rad}
+\end{equation}
+where $\dot Q_{loss,tot}$ is the total heat loss from the receiver, $\dot Q_{loss,ref}$ the heat loss due to reflection, $\dot Q_{loss,conv}$ the heat loss due to external convection and $\dot Q_{loss,rad}$ the heat loss due to radiation.
+
+\subsubsection{Reflection heat losses}
+\nomenclature[G]{$\alpha$}{Absorptance \nomunit{-}}
+\nomenclature[Z]{eff}{Effective}
+\nomenclature[Z]{inc}{Incident}
+\nomenclature[Z]{rec}{Receiver}
+\nomenclature[Z]{abs}{Absorber}
+\nomenclature[Z]{env}{Envelope}
+\begin{equation}
+\dot Q_{loss,ref}=(1-\alpha_{eff})\cdot \dot Q_{inc,rec} 
+\end{equation}
+where $\alpha_{eff}$ is the effective absorptance due to the curvature of receiver tubes, $\alpha$ the absorptance of coated paint, $\dot Q_{inc,rec}$ the incident receiver thermal power from the solar field.
+\nomenclature[S]{A}{Area \nomunit{$m^2$}}
+\begin{equation}
+\alpha_{eff} = \frac {\alpha} {\alpha+(1-\alpha)\frac{A_{abs}}{A_{env}}}
+\end{equation}
+\subsubsection{Convection heat losses}
+The external receiver is usually approximated as a cylinder. It is considered as a vertical cylinder for the heat transfer model. The height of the receiver is always higher than the diameter and it mostly agrees to the following condition to treat the receiver as vertical plate for the heat transfer correlations. 
+\nomenclature[S]{D}{Diameter of the receiver \nomunit{m}}
+\nomenclature[S]{L}{Length \nomunit{m}}
+\nomenclature[S]{Gr}{Grashoff number \nomunit{-}}
+\nomenclature[Z]{c}{Characteristic}
+\begin{equation}
+\frac{D}{L_{c}}\ge \frac{35}{Gr_{L}^{\frac{1}{4}}}
+\end{equation}
+where $D$ is the outer diameter of the receiver, $L$ the height of the receiver and $Gr_{L}$ the Grashoff number. The external convection heat loss equation is given below with the mixed convection heat transfer coefficient. 
+\nomenclature[S]{h}{Heat transfer coefficient \nomunit{$W/m^2K$}}
+\nomenclature[S]{T}{Temperature \nomunit{K}}
+\nomenclature[Z]{mixed}{Overall}
+\nomenclature[Z]{s}{Surface}
+\nomenclature[Z]{ave}{Average}
+\nomenclature[Z]{amb}{Ambient}
+\begin{equation}
+\dot Q_{loss,conv} = h_{mixed}\cdot A_{rec}\cdot (T_{s,ave}-T_{amb})
+\end{equation}
+where $h_{mixed}$ is heat transfer coefficient due to mixed convection, $A_{rec}$ the area of the receiver, $T_{s,ave}$ the average surface temperature of the receiver and $T_{amb}$ the ambient temperature.\\\\
+\textbf{{Mixed convection:}}\\[0.2cm]
+According to literatures \cite{Siebers.1984}, most of the external solar receivers will undergo mixed convection. It can be stated with the following correlation \cite{Cengel.2003} \cite{Siebers.1984}. According to Cengel\cite{Cengel.2003}, the value 'm' lies between 3 and 4. The value close to 3 suits better for vertical surfaces and the larger values are opt for horizontal surfaces. Siebers \cite{Siebers.1984} studied this value particularly for both receivers and estimated the best suited value of 3.2 and 1 for external and cavity receivers respectively.
+\nomenclature[Z]{nat}{Natural}
+\nomenclature[Z]{for}{Forced}
+\begin{equation}
+h_{mixed} = (h_{nat}^m + h_{for}^m)^{1/m}
+\end{equation}
+where $h_{nat}$ is heat transfer coefficient due to natural convection, $h_{for}$ the heat transfer coefficient due to forced convection and m is constant.\\\\
+\textbf{{Natural convection:}}\\
+\nomenclature[S]{k}{Thermal conductivity \nomunit{W/mK}}
+\nomenclature[S]{Nu}{Nusselt number \nomunit{-}}
+\nomenclature[Z]{air}{Air}
+\begin{equation}
+h_{nat}=Nu_{nat}\cdot k_{air}/L_c
+\end{equation}
+where $Nu_{nat}$ is Nusselt number for natural convection, $k_{air}$ the thermal conductivity of air at ambient temperature and $L_c$ the characteristic length.
+\nomenclature[S]{H}{Height \nomunit{m}}
+\nomenclature[G]{$\beta$}{Volumetric expansion coefficient \nomunit{1/K}}
+\nomenclature[G]{$\nu$}{Kinematic viscosity \nomunit{$m^2/s$}}
+\nomenclature[Z]{fluid}{Heat transfer fluid}
+\begin{equation}
+Gr=g \cdot \beta\cdot (T_{s,ave}-T_{amb})\cdot {H_{rec}^3/\nu_{fluid}}
+\end{equation}
+where $Gr$ is Grashof number, $\beta$ the volumetric expansion coefficient(1/K) of air at ambient temperature, $T_{s,ave}$ the average surface temperature of the receiver, $H_{rec}$ the height of the receiver, $\nu_{fluid}$ the kinematic viscosity of the air at ambient temperature.
+\nomenclature[S]{Pr}{Prandtl number \nomunit{-}}
+\nomenclature[S]{$c_p$}{Specific heat \nomunit{J/kgK}}
+\nomenclature[G]{$\mu$}{Dynamic viscosity \nomunit{$kg/ms$}}
+\nomenclature[G]{$\rho$}{Density \nomunit{$kg/m^3$}}
+\begin{equation}
+\mathrm{Pr} = \frac{\nu}{\alpha} = \frac{\mbox{viscous diffusion rate}}{\mbox{thermal diffusion rate}} = \frac{\mu / \rho}{k / c_p \rho} = \frac{c_p \mu}{k}
+\end{equation}
+where $Pr$ is Prandtl number, $\alpha$= Thermal diffusivity of air at ambient temperature, $\mu $ the dynamic viscosity of air at ambient temperature, $c_p$ the specific heat of air at ambient temperature.
+\nomenclature[S]{Ra}{Rayleigh number\nomunit{-}}
+\begin{equation}
+Ra=Gr.Pr
+\end{equation}
+where $Ra$ is Rayleigh number.\\\\
+
+\textbf{{Siebers and Kraabel [1984] \cite{Siebers.1984}:}}
+This correlation is widely used for the heat loss calculation of the solar receivers \cite{Christian.2012}. But the author itself stated that there are nearly 40 percent uncertainty in the equation. All the fluid properties are calculated at the ambient temperature, $T_{amb}$.
+\begin{equation}
+Nu_{nat}=0.098\cdot Gr_H^{1/3}\cdot(T_s/T_{amb})^{-0.14}
+\end{equation}
+\textbf{{Forced convection:}}\\
+\begin{equation}
+h_{for}=Nu_{for}\cdot k_{air}/D_{rec}
+\end{equation}
+where $h_{for}$ is heat transfer coefficient for forced convection, $Nu_{for}$ the Nusselt number for forced convection.\\
+\nomenclature[S]{Re}{Reynold's number \nomunit{-}}
+\nomenclature[S]{$u_{wind}$}{Wind velocity \nomunit{m/s}}
+\begin{equation}
+Re= \frac{Inertial forces}{Viscous forces}=\frac{u_{wind}\cdot D_{rec}}{\nu_{air}}
+\end{equation}
+where $Re$ is Reynold's number, $u_{wind}$ the wind velocity, $\nu_{air}$ the  kinematic viscosity of air at ambient temperature.\\\\
+
+\textbf{{Siebers and Kraabel \cite{Siebers.1984}:}}
+This correlation is widely used for the heat loss calculation of the solar receivers \cite{Christian.2012}. But the author itself stated that there are  uncertainty in the equation. All the fluid properties are calculated at the film temperature, $T_f$. In the \tablename{ 2.2}, Nusselt correlation for smooth and rough cylinders are shown where $k_s/D$ is Surface roughness, $k_s$ the radius of receiver tube, $D$ the diameter of external receiver\\\\
+\begin{table}[h]
+	\centering
+	\begin{tabularx}{\textwidth}{|c|c|c|}
+		\hline
+		& Reynolds Number Range & Correlation\\
+		\hline
+		\multicolumn{3}{|c|}{$k_s/D=0$ (A smooth cylinder)} \\
+		\hline
+		(1) & All Re & $Nu_{for}=0.3+0.488\cdot Re^{0.5}\cdot \left(1+\left(\frac{Re}{282000}\right)^{0.625}\right)^{0.8}$\\
+		\hline
+		\multicolumn{3}{|c|}{$k_s/D=75\times10^{-5}$} \\
+		\hline
+		(2) & $Re\le 7.0\times10^5$ & Use correlation (1) \\
+		\hline
+		(3) & $7.0\times10^5<Re<2.2\times10^7$ & $Nu_{for}=2.57\times10^{-3}\cdot Re^{0.98}$ \\
+		\hline
+		(4) & $Re\ge2.2\times10^7$ & $Nu_{for}=0.0455\cdot Re^{0.81}$ \\
+		\hline
+		\multicolumn{3}{|c|}{$k_s/D=300\times10^{-5}$} \\
+		\hline
+		(5) & $Re\le 1.8\times10^5$ & Use correlation (1) \\
+		\hline
+		(6) & $1.8\times10^5<Re<4\times10^6$ & $Nu_{for}=0.0135\cdot Re^{0.89}$ \\
+		\hline
+		(7) & $Re\ge4\times10^6$ & Use correlation (4) \\
+		\hline
+		\multicolumn{3}{|c|}{$k_s/D=900\times10^{-5}$} \\
+		\hline
+		(8) & $Re\le 1\times10^5 $ & Use correlation (1) \\
+		\hline
+		(9) & $Re>1\times10^5$ & Use correlation (4) \\
+		\hline
+	\end{tabularx}
+	\caption{Nusselt correlation for forced convection of external receivers \cite{Siebers.1984}}
+\end{table} 
+\subsubsection{Radiative heat transfer}
+The external receiver is coated with the black coating to increase the absorbtivity. Generally black pyromark is used to coat the receiver panels and housing \cite{Zavoico.2001}.
+\nomenclature[G]{$\sigma$}{Stefan-Boltzmann constant \nomunit{$W / m^2 K^4$}}
+\nomenclature[G]{$\epsilon$}{Emissivity \nomunit{-}}
+\begin{equation}
+\dot Q_{loss,rad}=\sigma \cdot \epsilon_{rec}\cdot A_{rec}\cdot (T_{s,ave}^4-T_{amb}^4)
+\end{equation}
+where  $\sigma$ is Stefan-Boltzmann constant which is $ 5.670 \cdot 10^{-8} W / m^2 K^4$,  $\epsilon_{rec}$ the emissivity of black pyromark \cite{Zavoico.2001} $\epsilon_{rec} = 0.83$.
+\section{Cavity Receiver Design Model}
+\subsection{Receiver geometry design}
+For cavity receiver, the receiver geometry design includes radius of the cavity, height of the receiver, height of the absorber, lip height, width and height of the aperture, cavity opening angle and the cavity inclination. Like external receivers, receiver aspect ratio should be decided to design cavity receivers also. The receiver aspect ratio usually ranges between 0.7 to 1 for cavity receivers. In the following figure, ${H_P}/{W_A}$ is the height to width ratio which is also known as receiver aspect ratio. The following steps show how to calculate the width and height of the receiver aperture. Once the absorber area is calculated with the allowable heat flux, width and height of the receiver aperture can be calculated by fixing receiver aspect ratio and cavity opening angle. \\\\
+\begin{equation}
+	A_{abs} = \frac {\theta_{rec}}{180} \pi R_{rec} H_{abs}\frac {\pi}{2}
+\end{equation}
+where $A_{abs}$ the receiver absorber area, $\theta_{rec}$ the cavity opening angle in degrees, $R_{rec}$ the radius of the receiver, $H_{abs}$ the height of the absorber or Aperture height of the receiver and $\pi / 2$ the factor needs to be taken into account for the curvature of the receiver tubes.\\\\
+With the above equation written in terms of receiver aspect ratio, the radius and height of the absorber can be calculated which are shown below. In order to have a clear idea of radius of the receiver, it is shown clearly in the figure below. The width of the receiver aperture can be calculated from the following equation with the assumption of receiver diameter always equals to aperture diameter or by fixing Aperture width to total width ratio :\\\\
+\begin{equation}
+	W_{aper} = 2 R_{rec} \cos \left( \frac{\pi - \theta_{rec}}{2} \right)
+\end{equation}
+where $W_{aper}$ the width of the receiver aperture.
+\begin{equation}
+	H_{aper} = h/d_{ratio} \cdot 2 \cdot R_{rec}
+\end{equation}
+where $H_{aper}$ the height of the absorber or Aperture height of the receiver.
+\begin{equation}
+	R_{rec} = \sqrt{A_{abs} / (\theta_{rec} / \pi \cdot \pi^2 \cdot h/d_{ratio})}
+\end{equation}
+In order to accomodate the receiver pipings and headers inside the cavity, extra space should be needed. After including the space, the overall height can be calculated with the parameter aperture to total height ratio. The extra spacing is covered by the lip in the cavity. Only upper lip is considered in the current model. The aperture to total height of the receiver is chosen as 0.75 and the total height and lip height of the receiver can be calculated by \\\\
+\begin{equation}
+	H_{rec} = \frac{1} {\left(\frac{h_{aper}}{h_{tot}}\right)_{ratio}} \cdot H_{abs}
+\end{equation}
+\begin{equation}
+	H_{lip} = H_{rec} - H_{abs}
+\end{equation}
+where $H_{rec}$ is the total height of the receiver, $H_{lip}$ the lip height of the receiver and $\left(\frac{h_{aper}}{h_{tot}}\right)_{ratio}$ the aperture to total height ratio.\\\\
+\subsection{Receiver tube and panels design}
+The receiver tube and panels design is more same like external receivers except the calculation of number of receiver tubes in the receiver. The number of receiver tubes can be calculated by\\\\
+\begin{equation}
+n_{tube,rec} = (\pi \cdot R_{rec} \cdot \theta_{rec} / \pi) / d_{tube,outer}
+\end{equation}
+The other design is same as that of external receivers. 
+\subsection{Tower height design}
+The tower height for cavity receiver is calculated by the correlation developed by curve fitting Falcone values. The correlation is shown below:\\\\
+\begin{equation}
+	H_{tower,min} = 58.31818 + (0.4377023 \cdot P_{th,rec}) - (0.0001802198 \cdot P_{th,rec}^2)
+\end{equation}        
+\begin{equation}
+	H_{tower,max}= 76.02273 + (0.4571479 \cdot P_{th,rec}) - (0.0002080919 \cdot P_{th,rec}^2)
+\end{equation}
+\begin{equation}
+	H_{tower} = (H_{tower,min} + H_{tower,max}) / 2
+\end{equation}
+\subsection{Receiver thermal efficiency}
+The general procedure for calculation of receiver thermal efficiency is same as that of external receivers. The heat losses which are different for cavity receivers are shown below.
+\subsection{Reflection heat losses}
+\begin{equation}
+	\dot Q_{loss,ref}=(1-\alpha_{eff})\cdot \frac{\dot Q_{inc,rec}}{A_{rec}} \cdot A_{aper}
+\end{equation}
+where $\alpha_{eff}$ the effective absorptance due to the curvature of receiver tubes<, $\alpha$ the absorptance of the coated paint, $\dot Q_{inc,rec}$ the incident receiver thermal power from the solar field, the $A_{rec}$ the area of the absorber and $A_{aper}$ the area of the aperture <br/>
+\begin{equation}
+	\alpha_{eff} = \frac {\alpha} {\alpha+(1-\alpha)\frac{A_{absorber}}{A_{envelope}}}
+\end{equation}
+\subsection{Convection heat losses}
+\subsubsection{Natural convection:}
+The following correlations can be used to calculate the natural heat transfer coefficient:
+\nomenclature[Z]{w}{Wall}
+\begin{equation}
+Nu_l = 0.088Gr_l^{1/3} \left(\frac{T_w}{T_{amb}}\right)^{0.18} \quad  10^5 \le Gr \le 10^{12}
+\end{equation}
+For air at normal atmospheric temperatures, the direct heat transfer coefficient correlation is given by 
+\begin{equation}
+h_{nc,0} = 0.81(T_w - T_{amb})^{0.426}
+\end{equation}
+\begin{equation}
+h_{nc} = h_{nc,0} \left(\frac{A_1}{A_2}\right) \left(\frac{A_3}{A_1}\right)^n
+\end{equation}
+where n is 0.63 and for cavities inclined more than 30° n is 0.8, Area $A_1$, $A_2$ and $A_3$ are shown in the figure. The area used for heat transfer is the total interior surface of the cavity receiver, $A_1$.\\\\
+\textbf{{Forced convection:}}\\[0.2cm]
+\textbf{{Siebers and Kraabel[1984]:}} The following correlations can be used to calculate the forced heat transfer coefficient:
+\begin{equation}
+Nu_W = 0.0287Re_W^{0.8}Pr^{1/3}
+\end{equation}
+The area used for heat transfer is the aperture area of the cavity receiver.\\\\
+\subsection{Radiation heat losses}
+The cavity receiver is coated with the black coating to increase the absorptivity. Generally black pyromark is used to coat the receiver panels and housing \cite{Zavoico.2001}.
+\begin{equation}
+\dot Q_{loss,rad}=\sigma_S\cdot \epsilon_{rec}\cdot A_{aper}\cdot (T_{s,ave}^4-T_{amb}^4)
+\end{equation}
+where $\sigma_S = 5.670 \cdot 10^{-8} W / m^2 K^4$ is  Stefan-Boltzmann constant,$\epsilon_{rec} = 0.83$ the emissivity of black pyromark \cite{Zavoico.2001}. \\\\
+This is valid if the average surface temperature of all surfaces inside the cavity is used.

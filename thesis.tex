@@ -1,0 +1,225 @@
+%
+% TU/e Style Master Thesis template for LaTeX
+%
+% Public version 1.0
+% 2010 - 2013 Thijs Nugteren and Joos Buijs
+%
+% THIS IS THE MAIN FILE (i.e. compile this file, compiling the others directly won't work)
+%
+\documentclass[a4paper,10pt,twoside]{report}
+
+%all the other includes etc. are done in the thesis.sty file.
+\usepackage{thesis}
+\usepackage{amssymb}
+\usepackage{nomencl}
+\usepackage{hyperref}
+\usepackage{apacite}
+\usepackage{enumitem}
+\usepackage{multirow}
+\makenomenclature
+\newcommand{\nomunit}[1]{\renewcommand{\nomentryend}{\hspace*{\fill}#1}}
+\usepackage{etoolbox}
+\renewcommand\nomgroup[1]{%
+	\item[\bfseries
+	\ifstrequal{#1}{S}{Symbols}{%
+		\ifstrequal{#1}{G}{Greek symbols}{%
+			\ifstrequal{#1}{Z}{Subscripts}{}}{%
+			\ifstrequal{#1}{A}{Abbrevations}{}}}%
+	]}
+\usepackage{tabularx}
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+
+\lstset{style=mystyle}
+\setlength{\tabcolsep}{12 pt}
+\renewcommand{\arraystretch}{2}
+\usepackage{adjustbox}
+\usepackage{lipsum}
+% These commands need to be defined in order to produce a correct and personalized document
+%
+\newcommand{\shortdoctitle}{Master's Thesis}
+\newcommand{\doctitle}{Ultra-wide Band for Vehicle Platooning }
+\newcommand{\docsubtitle}{Master Thesis}
+
+\newcommand{\me}{Abhishek Srujan \\ Student Id: 0977110 \\ Email: a.srujan@student.tue.nl}
+\newcommand{\keywords}{keyword1, keyword2, keyword3}
+\newcommand{\version}{}
+\newcommand{\monthYear}{July 2016}
+
+%Be sure to use all the titles for your committee members!!! (their names show up on the very first page!)
+\author{\me}
+
+%
+% PDF settings
+%
+\hypersetup
+{
+    pdfauthor={\me},
+    pdftitle={\shortdoctitle},
+    pdfsubject={\doctitle},
+    pdfkeywords={\keywords}
+}
+
+\begin{document}
+
+%use this include for PDF and distribution versions
+\pagenumbering{roman}
+\include{titlepage}
+
+\normalsize
+
+\clearemptydoublepage
+
+%Sometimes line numbers are nice, uncomment the next line to enable:
+%\linenumbers
+
+%It could be handy to have a list of todos and brainstorms in your thesis
+%\chapter*{*General todos*}\todo{remove this chapter}
+%\input{chapters/general_todos}
+
+%\chapter*{*Brainstorm results*}\todo{remove this chapter}
+%\input{chapters/brainstorm_results}
+
+
+\chapter*{Abstract}\label{chapter:abstract}
+\input{chapters/abstract}
+
+\clearemptydoublepage
+\chapter*{Acknowledgments}\label{chapter:acknowledgment}
+\input{chapters/acknowledgment}
+\clearemptydoublepage
+%An executive summary if you want:
+%\chapter*{Executive summary}\label{chapter:executive_summary}
+%\input{chapters/executive_summary}
+
+%\clearemptydoublepage
+
+
+%\chapter*{Preface}\label{chapter:preface}
+%\input{chapters/preface}
+
+%\clearemptydoublepage
+
+\tableofcontents
+
+%\clearemptydoublepage
+
+\listoffigures
+
+%\clearemptydoublepage
+
+\listoftables
+%\newpage
+\addcontentsline{toc}{chapter}{Nomenclature}
+\renewcommand{\nomname}{Nomenclature}
+\markboth{NOMENCLATURE}{NOMENCLATURE}
+\printnomenclature
+
+%\clearemptydoublepage
+%\printnomenclature
+
+\lstlistoflistings
+
+\clearemptydoublepage
+\chapter{Introduction}\label{chapter:introduction}
+\setcounter{page}{0}
+\pagenumbering{arabic}
+%%from here on, start the 'real' page numbering, from 1, with normal digits
+\input{chapters/introduction}
+
+\clearemptydoublepage
+\chapter{Background}\label{chapter:background}
+\input{chapters/background}
+\clearemptydoublepage
+
+\chapter{Related Work}\label{chapter:relatedWork}
+\input{chapters/relatedWork}
+\clearemptydoublepage
+
+\chapter{Test Platform Requirements}\label{chapter:testPlatformRequirements}
+\input{chapters/testPlatformRequirements}
+\clearemptydoublepage
+
+\chapter{Test Platform Implementation}\label{chapter:testPlatformImplementation}
+\input{chapters/testPlatformImplementation}
+\clearemptydoublepage
+
+\chapter{Duty Cycle Requirements for UWB}\label{chapter:dutycyclerequirements}
+\input{chapters/dutycyclerequirements}
+\clearemptydoublepage
+
+
+\chapter{Experiments and Results}\label{chapter:experimentsAndResults}
+\input{chapters/experimentsAndResults}
+\clearemptydoublepage
+
+\chapter{Conclusion and Future work}\label{chapter:conclusionAndFutureWork}
+\input{chapters/conclusionAndFutureWork}
+\clearemptydoublepage
+
+
+
+
+
+
+
+%\chapter{Literature Review}\label{chapter:Literature_review}
+%\input{chapters/Literature_review_copy}
+%
+%%\clearemptydoublepage
+%
+%\chapter{Design Methodology}\label{chapter:Design_methodology}
+%\input{chapters/first_real_chapter}
+%
+%%\clearemptydoublepage
+%
+%\chapter{Implementation of the Design Method}\label{chapter:Implementation and Validation of the Design method}
+%\input{chapters/second_real_chapter}
+%
+%%\clearemptydoublepage
+%\chapter{Results and Validation}\label{chapter: Validation of the Receiver Model}
+%\input{chapters/validation}
+
+%\chapter{Conclusions}\label{chapter:conclusions}
+%\input{chapters/conclusions}
+
+\clearemptydoublepage
+
+%Choose a good bibliography style, plain would do often, but these might be nice too
+%\bibliographystyle{plain}
+
+\bibliographystyle{apacite}
+\bibliography{references}
+
+\clearemptydoublepage
+
+\appendix
+\addcontentsline{toc}{chapter}{Appendix}
+
+\input{appendices/main}
+
+\end{document}

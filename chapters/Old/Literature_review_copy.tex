@@ -1,0 +1,436 @@
+This chapter contains a brief literature survey about design methodology of tubular receivers implemented by several researchers. An overview of the design criteria and the existing heat transfer models of tubular receivers available in the literature are also discussed.
+
+\section{Tubular Receivers}
+Tubular receivers are the most widely used state of the art receiver technology \cite{Goswami.2007}. There are four common system options available based on the receiver and storage fluid. The first two are state of the art systems and the other two are still in research phase.
+\begin{figure}[h!]
+	\includegraphics[width=0.5\textwidth]{figures/tubular_receiver_cavity_external}
+	\centering
+	\caption{Tubular receivers \cite{Wagner.2008}}
+\end{figure}
+\subsection{Water/Steam} 
+\begin{figure}[h!]
+	\includegraphics[width=0.5\textwidth]{figures/water_steam}
+	\centering
+	\caption{Flow layout of water/steam central receiver system \cite{water_steam}}
+\end{figure}
+In this type of system, water is used as a heat transfer fluid (HTF) and so there is a direct steam generation in the receiver itself. One of the main advantages of this system is no need of heat exchanger if storage is not considered. But, the disadvantages of this system are
+\begin{itemize}
+\item Low receiver peak flux limit (0.3 to 0.6 $MW/m^2$) \cite{Falcone.1986}.
+\item  Storing energy in the form of high-pressure steam is uneconomical and so the energy must be transferred to some other medium with heat exchangers resulting into higher energy loss.
+\item  Two-phase heat transfer in the receiver directly influences its design.
+\item  The pioneer CSP power plant, solar one used oil/rock thermocline storage. The maximum temperature limitation of oil is 315 $^{\circ}$C and so the output steam from the storage has low temperature which results in the low turbine gross efficiency \cite{Falcone.1986}.
+\end{itemize}
+\subsection{Molten Salt}
+\noindent Molten salt is an attractive HTF for CSP plants with storage because of its low cost and its commercial availability. Some of the attractive features \cite{Falcone.1986} are
+\begin{figure}[h!]
+	\includegraphics[width=0.7\textwidth]{figures/molten_salt_layout}
+	\centering
+	\caption{Flow layout of molten salt central receiver system \cite{Wagner.2008}}
+\end{figure}
+\begin{itemize}
+\item High receiver peak flux limit compared to water/steam system (0.6 to 0.8 $MW/m^2$).
+\item State of the art technology with 40 years of operational experience as an HTF. 
+\item Non-toxic and stable over an extended period of time when protected from the environment and overheating. 
+\item Molten salt is 2 to 3 times cheaper than sodium.
+\end{itemize}
+\subsection{Liquid Sodium}
+\begin{figure}[h!]
+	\includegraphics[width=0.5\textwidth]{figures/sodium_htf}
+	\centering
+	\caption{Flow layout of liquid sodium central receiver system \cite{Falcone.1986}}
+\end{figure}
+Liquid sodium has very good heat transfer properties and so it has low thermal losses due to the reduced area of the receiver. Mostly, sodium receivers are external type with already reduced losses and so the further loss reduction with cavity type receiver is not shown to be beneficial \cite{Falcone.1986}. Compared to molten salt, liquid sodium has very good heat transfer properties \cite{Falcone.1986} which are given below:
+\begin{itemize}
+\item Receiver peak flux limit (in excess of 1.5 $MW/m^2$).
+\item Higher thermal conductivity and so it is able to operate with high incident solar flux.
+\item Sodium has five times higher heat transfer rate than molten salt and so single pass is enough in the receiver fluid flow.
+\item Sodium freezes at 100 $^{\circ}$C which is two times lower when compared with molten salt.
+\item Sodium has higher boiling point (873 $^{\circ}$C) \cite{Nicholas.2012} which allows it to operate in other high-temperature cycles also.
+\item Because of the higher operational flux, receiver size, cost and its losses are reduced resulting into higher receiver efficiency.
+But, there are many limiting factors which act as a hindrance for sodium receiver to be commercially accomplished. Some of them \cite{Falcone.1986} are stated below:
+\item The relatively high cost and low specific heat of sodium limit its usage as sensible heat storage medium.
+\item Low volumetric heat capacity of sodium makes the storage tank larger and costlier.
+\item The main point to note is that the highly reactive nature of sodium and water has to be considered while designing.
+\end{itemize}
+\subsection{Sodium/Salt Binary}
+\begin{figure}[h!]
+	\includegraphics[width=0.5\textwidth]{figures/sodium_binary_htf}
+	\centering
+	\caption{Flow layout of sodium/salt binary central receiver system \cite{Falcone.1986}}
+\end{figure}
+\noindent The fourth option, in which sodium is used as a receiver fluid and molten salt is used as the storage fluid. It combines the attractive feature of both fluids but the additional heat transfer loop is needed to couple the system to run which adds complexity. The risk of sodium fire is reduced because it is restricted within the concrete tower but the reaction between sodium and molten salt is not well-known. Current indications are that it would be strongly exothermic and release the gaseous product which may cause pressurisation problem \cite{Falcone.1986}.
+
+\section{Receiver Design Methodology}
+This section summarises the receiver design methodology suggested by various researchers.
+
+\subsection{Falcone [1986] \cite{Falcone.1986}}
+Falcone \cite{Falcone.1986} suggested the following steps for the tubular receiver design: 
+\begin{enumerate}
+	\item Calculate the thermal rating of the receiver based on system level requirements like plant output, type of receiver fluid and storage media, nature of power cycle and solar multiple.
+	\item Select the flux limit based on working fluid and the tube material of the receiver.
+	\item Then, calculate the required receiver absorber area for the given allowable flux limit.
+	\item The receiver size should be within the limit of practical size.
+	\item The minimum receiver size is largely a function of spillage considerations based on the size of reflected heliostat beam and the size of its target. The beam size increases along with the size of heliostat even for the focused and canted mirrors. The receiver size also corresponds to reflected beam size in order to keep the spillage losses within a reasonable limit.
+	\item The maximum practical size is limited by the height of receiver panels due to shipping constraints.
+\end{enumerate}
+\subsection{Zavoico [2001] \cite{Zavoico.2001}}
+Zavoico \cite{Zavoico.2001} suggested the following steps for the tubular receiver design: 
+\begin{enumerate}
+	\item Establish the allowable incident flux as a function of bulk salt temperature, allowable cumulative tube strains and corrosion rates at the salt film temperature.
+	\item Estimate the receiver size based on the maximum allowable flux.
+	\item Estimate the heat losses for various combinations of receiver height and diameter. 
+	\item Then, the aspect ratio should be selected for the maximum receiver efficiency.
+	\item The dimensions of the receiver should be selected such that it gives the lower cost.
+\end{enumerate}
+\subsection{Lata [2008] \cite{Lata.2008}}
+Lata \cite{Lata.2008} tried to optimize the receiver dimensions in order to increase the allowable peak flux of molten salt receiver from 0.85 $MW/m^2$ to 1 $MW/m^2$. Basically, their design methodology is similar to other researchers. In addition, they tried to optimise the following receiver dimensions.
+\begin{enumerate}
+	\item Receiver size optimisation to minimise the thermal losses (H/D ratio selection).
+	\item Small fluid cavity to maximise the receiver thermal efficiency and to prevent fatigue-creep damage (Tube diameter selection).
+	\item Thin walled conduction to improve thermal efficiency (Tube wall thickness selection).
+	\item Minimise the pressure losses by optimising the number of panels and molten salt circuit routeing (Number of panels and fluid path selection).
+	\item High nickel alloy material with excellent mechanical properties (Material selection).
+\end{enumerate}
+All the above said design criteria for the receiver will be discussed in the next section.
+\subsection{System Advisory Model (SAM) \cite{Wagner.2008}}
+The performance model of SAM uses the TRNSYS components developed at the University of Wisconsin and the solar field optimisation algorithm is based on the DELSOL3 model developed at the Sandia national laboratory. It is capable of operating in two modes. The first one calculates the performance of an existing system. The second one is an optimisation of system design. \\\\
+In the optimisation process, the tower height and receiver sizes are iteratively evaluated to find out the minimum possible cost of electricity output. But, the optimisation process needs the initial guess defined by the user. Then, the guess value is iteratively evaluated within the range given below. One of the limitation is that the educated guess of tower height has to be supplied by the user. It may mislead into wrong results if the guess value is not appropriate. The following are the ranges for the different parameters used for the optimisation.
+\nomenclature[S]{P}{Power \nomunit{W}}
+\nomenclature[S]{H}{Height \nomunit{m}}
+\nomenclature[S]{D}{Diameter \nomunit{m}}
+\nomenclature[Z]{el}{Electric}
+\begin{itemize}
+	\item Nominal plant electric output power: $ \quad  \frac{1}{2}P_{el,guess}\le P_{el,guess} \le 5 \times P_{el,guess} $
+	\item Tower height: $ \quad  0.6 \times H_{tower} \le H_{tower} \le 2 \times H_{tower} $
+	\item Receiver Diameter: $ \quad  0.4 \times D_{rec}\le D_{rec} \le 1.8 \times D_{rec} $
+	\item Height to Diameter ratio (Aspect ratio): $ \quad 0.6 \times \frac{H_{rec}}{D_{rec}}\le \frac{H_{rec}}{D_{rec}} \le 1.4 \times \frac{H_{rec}}{D_{rec}} $ 
+\end{itemize}
+They have developed objective function for the minimisation of the lowest energy cost and optimising iteratively based on the objective function by varying all the parameters within this range.
+
+\section{Design Criteria}
+The design criteria summarise about every parameter which needs to be optimised for better receiver design.
+\subsection{Allowable Peak Flux Limit }
+\begin{figure}[h]
+	\includegraphics[width=0.5\textwidth]{figures/Receiver_flux_graph}
+	\centering
+	\caption{Receiver peak flux value for different HTF and materials with respect to life cycles \cite{Falcone.1986}}
+\end{figure}
+The normal range of flux limit for the receiver fluids is tabulated below.
+\begin{table}[h]
+\begin{center}
+	\begin{tabular}{ |c|c|c|c| } 
+		\hline
+		 \textbf{Name of the HTF} & \textbf{Flux limit range} & \textbf{Unit} \\
+		\hline
+		Water/Steam & 0.3 to 0.6 & $ MW/m^2 $ \\ 
+		\hline
+		Molten Salt& 0.6 to 0.85 & $ MW/m^2 $ \\ 
+		\hline
+		Liquid Sodium& 1.2 to 1.3 & $ MW/m^2 $ \\ 
+		\hline
+	\end{tabular}
+	\caption{Receiver flux limit for different HTF\label{Receiver_flux_limit} \cite{Falcone.1986}}
+\end{center}
+\end{table}
+It is based on the tube material and with the required number of life cycles. \figurename{ 2.6} represents the graph of receiver peak flux for different HTF and materials \cite{Falcone.1986}. In the graph, allowable flux limit of molten salt and sodium receiver with two types of steel are plotted with respect to life cycles. As a goal of 30 years lifetime for the receiver, it would be roughly 11000 cycles at the rate of one cycle per day. But, one should take into account for the transients due to weather conditions also. The allowable peak flux, ${q_o}$ can be calculated based on the simple model using the allowable thermal strain, thermal expansion and the poisson ratio of the material \cite{Liao.2014}. The average flux can be calculated by peak to average flux ratio. According to Stine and Harrigan \cite{Stine.1985}, the peak to average flux ratio can be between 2 to 3.
+\nomenclature[G]{$\varepsilon$}{Allowable strain of the material \nomunit{-}}
+\nomenclature[G]{$\delta$}{Thermal expansion coefficient \nomunit{1/m K}}
+\nomenclature[G]{$\upsilon$}{ Poisson's ratio \nomunit{-}}
+\nomenclature[S]{k}{Thermal conductivity \nomunit{W/m K}}
+\nomenclature[S]{d}{Diameter of the receiver tube \nomunit{m}}
+\nomenclature[S]{h}{Heat transfer coefficient \nomunit{W/m$^2$ K}}
+\nomenclature[S]{R}{Thermal Resistance \nomunit{K/W}}
+\nomenclature[S]{q$_o$}{Allowable peak flux \nomunit{W/m$^2$}}
+\nomenclature[Z]{cond}{Conduction}
+\nomenclature[Z]{o}{Outer}
+\nomenclature[Z]{i}{Inner}
+\begin{equation}
+{q_o} = \frac{\varepsilon} {\delta [\frac{2}{1-\upsilon}R_{cond} + \frac{\pi}{\pi -1} (\frac{1}{2}R_{cond} + R_{conv})]}
+\end{equation}
+where
+\begin{itemize}
+	\item $R_{cond} = \frac{d_o}{2k_m}ln(\frac{d_o}{d_i})$
+	\item $R_{conv} = \frac{d_o}{d_i} \frac{1}{h}$
+	\item $\varepsilon$ = Allowable strain of the material
+	\item $\delta$ = Thermal expansion coefficient, 1/m K
+	\item $\upsilon$ = Poisson's ratio
+	\item R = Thermal resistance, K/W
+	\item d = Diameter of the receiver tube, m
+	\item k = Thermal conductivity of the material, W/m K
+	\item h = Heat transfer coefficient, W/m$^2$ K
+	\end{itemize}
+\subsection{Receiver Sizing}
+Incident receiver thermal power should be estimated in order to size the receiver. Then, the allowable peak flux should be decided to calculate the absorber area required to handle the flux. The selection of the allowable peak flux has to be done carefully to avoid any failure. Generally, one-half to one-third of the peak flux \cite{Stine.1985} is selected as an average flux and the receiver is sized for the average flux in order to ensure that it would not fail. \\\\
+For cavity receivers, the inner surfaces of the receiver are exposed to re-radiation because of the enclosed structure and it may lead to overheating. According to Falcone \cite{Falcone.1986}, the receiver size for cavity receivers is 25 percent larger than the external receiver for the same incident receiver thermal power. So, the average flux can be selected accordingly for the cavity receivers in order to ensure that it would not fail. Then, the receiver geometry is designed with the aim of lower cost and higher efficiency. The following section explains how to design the receiver geometry.
+\subsection{Receiver Aspect Ratio}
+According to the statement of Falcone \cite{Falcone.1986}, the receiver aspect ratio (height to diameter ratio) would be between 1 to 2. But, it should be optimised for minimum thermal losses and trade-off with spillage loss should also be considered. According to the statement of Zavoico \cite{Zavoico.2001}, the receiver aspect ratio will be in the range of 1.2 to 1.5 but it should be selected for maximum receiver efficiency. For cavity receivers, it is known as height to width ratio which is usually in the range of 0.7 to 1 \cite{Falcone.1986}. Some of the other design considerations from literatures \cite{Falcone.1986} \cite{Zavoico.2001} are:
+\begin{itemize}
+	\item  The shipping constraint of the sub-assembly of panel tubes and the maximum continuous length of available seamless tubing limit the receiver height to 30m. But currently, there are some power plants which slightly crossed this limit. Crescent Dunes Solar Energy Project in US has the receiver height of 30.48 m \cite{Crescent} and the Atacama-1 project in Chile has been planned for the receiver height of 32 m \cite{Atacama}. 
+	\item The larger height is desirable because of the high pointing accuracy of the heliostats (low spillage loss). 
+	\item The larger diameter is desirable to maximise the interior space available to place all the receiver components but resulting into increased thermal losses due to the larger diameter. So, space allocation design analysis should also be considered to optimise the aspect ratio.
+\end{itemize} 
+\subsection{Tube Diameter Selection}
+The receiver tube diameter can vary between 20 mm to 45 mm \cite{Lata.2008} and generally made of stainless steel or Incoloy. The analysis by Lata \cite{Lata.2008} states the following: 
+\begin{itemize}
+	\item Smaller the diameter, higher the receiver efficiency because it increases the salt velocity which in turn increases the heat transfer coefficient. But, the limitation of smaller diameter is that it increases the manufacturing cost and also the pressure drop due to the increased number of tubes.
+	\item Pressure drop is directly proportional to the length of the salt circuit and to the square of the salt velocity and it is inversely proportional to the tube diameter. So, tradeoff between pressure drop and receiver efficiency should be done to optimise the tube diameter.
+	\item Smaller the tube wall thickness, higher the heat transfer rates because it reduces the temperature gradients and therefore the efficiency is increased. But, the practical constraint is that the wall thickness is limited to commercial values.
+\end{itemize}
+\subsection{Fluid Flow Path Selection}
+\begin{figure}[h]
+	\includegraphics[width=0.7\textwidth]{figures/flow_config}
+	\centering
+	\caption{Eight possible fluid flow configuration by Wagner \cite{Wagner.2008}}	
+\end{figure}
+\noindent The fluid flow path is one of the main design considerations in order to avoid the uneven distribution of heat flux. Falcone \cite{Falcone.1986} states that the upward fluid flow is preferable so that the buoyancy force of warmer does not counteract the pumping pressure. But for the molten salt receiver, multi-pass flow is needed and so it is difficult to design the upward fluid flow configuration in all the tubes. So, serpentine flow (up and down) is one of the best flow configurations. Wagner \cite{Wagner.2008} developed a receiver model to analyse the behaviour of the solar power plants and he studied eight possible fluid flow configuration of the receiver. The following suggestions are given by Wagner \cite{Wagner.2008} to design the efficient receiver:
+\begin{itemize}
+	\item It is observed that the configuration with single flow path has higher pressure drop and so the parasitic pump power is increased. Hence, the two parallel flow path in the receiver is suggested in order to obtain the higher receiver thermal efficiency. 
+	\item In Northern hemisphere, the south to north flow configuration gives higher efficiency because if cold fluid enters the higher flux panel in northern side, it will lead to higher thermal losses. 
+	\item During peak flux, the hot fluid from the south side could not be able to cool the higher flux northern panel. So, the northern panels are exposed to higher thermal stresses during peak hours which is not recommendable.
+	\item Hence, in the Northern hemisphere, the north to south flow configuration with two parallel flow path with or without a crossover is recommended for higher efficiency with low thermal stress.
+\end{itemize}
+Rodriguez-Sanchez \cite{Rodriguez.2015} simulated the same eight flow configurations to select the best with the aim of increasing the receiver availability and the global efficiency of the solar tower plant. He also obtained the similar results like Wagner and he proposed that the north to south flow configuration with one crossover in the middle is the best configuration based on the considerations of receiver thermal efficiency, distributed flux, tube temperature and the thermal stress.
+\subsection{Tower Sizing}
+The tower height is mainly a function of the receiver thermal power of the plant \cite{Falcone.1986}. The tower height is also influenced by the type of solar field. Falcone \cite{Falcone.1986} presented the graph which shows the range of tower height for the given receiver thermal power and the type of solar field. The towers can be built of steel or concrete. Steel tower will look like wired microwave relay towers and the concrete tower will be similar to chimneys at industrial plants \cite{Falcone.1986}. \figurename{ 2.8} shows both steel and concrete type tower. The choice of selecting the type of tower mainly depends on the height of the tower \cite{Falcone.1986}. The steel tower is shown to be beneficial below 120 m  and concrete tower will be preferred for height more than 120 m \cite{Falcone.1986}. The cost of tower increases with increasing tower height. 
+\begin{figure}[h]
+	\includegraphics[width=0.7\textwidth]{figures/tower_sizing_pic}
+	\centering
+	\caption{Solar tower for external and cavity receivers \cite{Feierabend.2010}}
+\end{figure}
+\section{Cavity Specific Design Criteria}
+The following section consists of design criteria specific for cavity receivers. There is no specific design criteria needed for external receivers. 
+\subsection{Cavity Receiver Geometry}
+The cavity receiver geometry is designed to reduce thermal losses by enclosing the absorber tubes inside the cavity. The receiver aspect ratio acts as a primary design parameter for the cavity receiver geometry which is generally 0.7 to 1 \cite{Falcone.1986}. It decides the width and height of the aperture opening and the radius of the cavity. In the cavity receiver, all the piping and headers are placed inside the cavity and so there is some space needed on the top and bottom of the absorber tubes. It should be considered while designing the cavity receiver geometry. Generally, these spaces are covered by the lip to avoid heat losses. The design of lip is explained in the subsection lip height. Like active surfaces, the inactive surfaces are also heated up due to re-radiation and so careful selection of receiver allowable flux is necessary. 
+\begin{figure}[h]
+	\includegraphics[width=0.7\textwidth]{figures/cavity_receiver_geometry}
+	\centering
+	\caption{Cavity receiver with three of four receiver panels assembled in PS10 power plant \cite{Feierabend.2010}}
+\end{figure}
+\subsection{Cavity Opening Angle}
+The cavity opening angle is the coverage angle of the radiation to the receiver from the solar field. Usually, the cavity opening angle is 180 degrees and the commercial plants like PS 10 are designed with the cavity opening angle of 180 degrees \cite{Feierabend.2010}. But, it actually depends on the solar field arrangement. Lukas \cite{Feierabend.2010} calculated the receiver thermal efficiency with the various cavity opening angle. He observed that the receiver thermal efficiency increases with the increasing cavity opening angle. It is explained that because of the decrease in aperture opening, heat loss will be lowered which in turn results in higher efficiency. But, it is not possible to distribute the heat flux uniformly for the higher cavity opening angle and so it can't be applied in real applications \cite{Feierabend.2010}.
+\subsection{Lip Height (Aperture to Total Height Ratio) } 
+The lip height which is usually specified as the aperture to total height ratio. The difference between the total height to aperture height is known as lip height. Generally, the upper lip reduces the heat losses and the lower lip does not have much effect on the heat losses \cite{Kraabel.1983}. The value of aperture to total height ratio used by Lukas is 0.75 \cite{Feierabend.2010}. If the aperture to total height ratio is further increased, it will decrease the heat loss but the spillage loss is increased. Hence, the tradeoff should be done in order to optimise the aperture to total height ratio.
+\subsection{Cavity Inclination}
+\begin{figure}[h]
+	\includegraphics[width=0.3\textwidth]{figures/cavity_inclination}
+	\centering
+	\caption{Cavity inclination angle \cite{Ma.1993}}	
+\end{figure}
+The cavity inclination can vary from 0${^\circ}$ to 90${^\circ}$. The convective heat loss of the cavity receiver depends on the wind speed, wind direction and also depends on the cavity inclination. Flesch \cite{Flesch.2015} conducted the cryogenic wind tunnel experiment and observed the influence of wind on the convective loss for head on and side on wind direction. In the no wind condition, the convective heat loss decreases with increasing receiver tilt angle\cite{Clausing.1981} \cite{Clausing.1983}. But with higher wind speed, the higher tilt angle also contributes to higher losses. From the analysis of cryogenic wind tunnel experiment, Flesch \cite{Flesch.2015} observed that the cavities should be designed in such a way that the wind flow is parallel to the aperture plane so that there is lesser wind influence to the heat losses. Moreover, cavity inclination is recommended in order to reduce the convection losses \cite{Flesch.2015}. 
+\section{Heat Transfer Model}
+The heat loss model which consists of heat loss due to external convection, radiation and reflection. Conduction loss to the back side of the receiver panel is small compared to other losses \cite{Stine.1985} and so it is neglected in this study. The overview of various heat transfer models is summarised in this section. It is divided into two subsections as external and cavity receivers. 
+\subsection{External Receiver}
+In the external receiver, the entire absorber area is exposed to the surroundings. So, there are higher thermal losses from the receiver to the surroundings when compared to cavity receivers. The main thermal losses include convection and radiation heat loss.
+\subsubsection{Convective Heat Loss}
+The heat transfer equations for the convection heat loss of cylindrical receivers are same like basic textbook equations. But, the Nusselt correlation that can be applied to the large-scale receivers is the ambiguous area in which a lot of researches are carried out \cite{Siebers.1984} \cite{Cengel.2003}. For the cylindrical receivers, heat transfer has an influence of both natural and the forced convection and so the mixed convection is usually considered \cite{Siebers.1984}. In order to find out which heat transfer is dominant, Richardson number is used \cite{Teichel.2011} and it is explained in the next subsection.\\\\
+According to literatures \cite{Cengel.2003} \cite{Siebers.1984}, heat transfer coefficient for mixed convection, $h_{mix}$ can be stated with the following correlation. According to Cengel \cite{Cengel.2003}, the value $m$ lies between 3 and 4. The value close to 3 suits better for vertical surfaces and the larger values are suited for horizontal surfaces. Siebers \cite{Siebers.1984} studied this value particularly for both receivers and estimated the best-suited value of 3.2 and 1 for external and cavity receiver respectively.
+\nomenclature[Z]{nat}{Natural}
+\nomenclature[Z]{for}{Forced}
+\nomenclature[Z]{mix}{Mixed}
+\begin{equation}
+\label{mixed_convection}
+h_{mix} = (h_{nat}^m + h_{for}^m)^{1/m}
+\end{equation}
+where 
+\begin{itemize}
+	\item $h_{nat}$  = Heat transfer coefficient due to natural convection, W/m$^2$ K 
+	\item $h_{for}$ = Heat transfer coefficient due to forced convection, W/m$^2$ K 
+\end{itemize}
+\textbf{Natural Convection Loss}\\[0.25cm]
+The natural convection loss occurs due to buoyancy effects and the Nusselt correlation of the natural convection is given by many authors. The Nusselt correlation for the natural convection which can be applied for the large-scale solar external receiver is given below:\\\\
+\textbf{Churchill and Chu [1975]:}
+This correlation is used for the design of base-load nitrate salt central power plant by Abengoa \cite{Tilley.2014}. The research is carried out in Sandia national lab in US. All the fluid properties are calculated at the film temperature, $T_f = \frac{T_{amb}+T_s}{2}$.
+\nomenclature[S]{T}{Temperature \nomunit{K}}
+\nomenclature[S]{Nu}{Nusselt number \nomunit{-}}
+\nomenclature[S]{Pr}{Prandtl number \nomunit{-}}
+\nomenclature[S]{Ra}{Rayleigh number \nomunit{-}}
+\nomenclature[Z]{f}{Film}
+\nomenclature[Z]{amb}{Ambient}
+\nomenclature[Z]{s}{Surface}
+\begin{equation}
+{Nu_{nat}} \ = \left({0.825 + \frac{0.387 \mathrm{Ra}_L^{1/6}}{\left(1 + (0.492/\mathrm{Pr})^{9/16} \right)^{8/27} }}\right)^2 \, \quad \mathrm{Ra}_L < 10^{12}
+\end{equation}
+For laminar flows, the following correlation is slightly more accurate. It is observed that a transition from laminar to turbulent boundary occurs when $Ra_{L}$ exceeds around $10^{9}$.
+\begin{equation}
+{Nu_{nat}} \ = \left(0.68 + \frac{0.67 \mathrm{Ra}_L^{1/4}}{\left(1 + (0.492/\mathrm{Pr})^{9/16}\right)^{4/9}}\right) \, \quad \mathrm10^{-1} < \mathrm{Ra}_L < 10^9 
+\end{equation}
+where 
+\begin{itemize}
+	\item Ra = Rayleigh number
+	\item Pr = Prandtl number
+\end{itemize}
+Rayleigh number is defined as the product of Grashof number and the Prandtl number and it is given in the form of equation below:
+\begin{equation}
+Ra=Gr.Pr
+\end{equation}
+where 
+\begin{itemize}
+	\item Gr = Grashof number
+\end{itemize}
+\nomenclature[G]{$\beta$}{Volumetric expansion coefficient \nomunit{1/K}}
+\nomenclature[G]{$\nu$}{Kinematic viscosity \nomunit{$m^2/s$}}
+The Grashof number can be calculated by the following equation:
+\begin{equation}
+Gr=g \cdot \beta\cdot (T_{s,ave}-T_{amb})\cdot {H_{rec}^3/\nu_{fluid}}
+\end{equation}
+where 
+\begin{itemize}
+	\item $\beta$ = Volumetric expansion coefficient, $1/K$
+	\item $\nu_{fluid}$ = Kinematic viscosity, $m^2/s$
+\end{itemize}
+\nomenclature[S]{$c_p$}{Specific heat \nomunit{J/kgK}}
+\nomenclature[G]{$\mu$}{Dynamic viscosity \nomunit{$kg/ms$}}
+\nomenclature[G]{$\rho$}{Density \nomunit{$kg/m^3$}}
+Prandtl number is defined as the ratio of viscous diffusion rate and the thermal diffusion rate and it can be calculated by using the equation below:
+\begin{equation}
+\mathrm{Pr} = \frac{\mu / \rho}{k / c_p \rho} = \frac{c_p \mu}{k}
+\end{equation}
+where 
+\begin{itemize}
+	\item $\mu$ = Dynamic viscosity, $kg/m s$
+\end{itemize}
+\textbf{Siebers and Kraabel [1984] \cite{Siebers.1984}:}
+This correlation is widely used for the heat loss calculation of the solar receivers \cite{Christian.2012}.  But, the author itself stated that there is nearly 40 percent uncertainty in the equation \cite{Siebers.1984}. All the fluid properties are calculated at the ambient temperature.
+\nomenclature[S]{Gr}{Grashof number \nomunit{-}}
+\begin{equation}
+Nu_{nat}=0.098\cdot Gr_H^{1/3}\cdot(T_s/T_{amb})^{-0.14}
+\label{siebers_natural_external_convection}
+\end{equation}
+\textbf{Forced Convection Loss}\\[0.25cm]
+The forced convection loss occurs due to the influence of wind velocity and the Nusselt correlation for the forced convection which can be applied to the large-scale solar external receiver is described below: \\\\
+\textbf{Churchill and Bernstein [1977] \cite {Cengel.2003}:}
+The following correlation is valid for $Re\cdot Pr > 0.2$ \cite{Cengel.2003}. But, Christian and Clifford stated that this correlation is valid for Reynold's number up to $4 \times 10^5$ and so this correlation can't be used for higher wind speeds \cite{Christian.2012}. All the fluid properties are calculated at the film temperature, $T_f$.\\
+\nomenclature[S]{Re}{Reynolds number \nomunit{-}}
+\begin{equation}
+Nu_{for}=0.3+\frac{0.62.Re^{1/2}\cdot Pr^{1/3}}{[1+(0.4/Pr)^{2/3}]^{1/4}}\left[1+\left(\frac{Re}{282,000}\right)^{5/8}\right]^{4/5}
+\end{equation}
+where
+\begin{itemize}
+	\item Re = Reynolds number
+\end{itemize}
+Reynolds number is defined as the ratio of inertial and the viscous forces and it can be calculated using the following equation:
+\nomenclature[S]{$u_{wind}$}{Wind velocity \nomunit{m/s}}
+\begin{equation}
+Re =\frac{u_{wind}\cdot D_{rec}}{\nu_{air}}
+\end{equation}
+where 
+\begin{itemize}
+	\item $u_{wind}$ = Wind velocity, $m/s$
+\end{itemize}
+\textbf{Siebers and Kraabel [1984] \cite {Siebers.1984}:}
+This correlation is widely used for the heat loss calculation of the solar receivers \cite{Christian.2012}. All the fluid properties are calculated at the film temperature, $T_f$. 
+\nomenclature[S]{$K_s$}{Surface roughness \nomunit{-}}
+\begin{table}[h]
+	\centering
+	\begin{tabularx}{\textwidth}{|c|c|c|}
+		\hline
+		& Reynolds Number Range & Correlation\\
+		\hline
+		\multicolumn{3}{|c|}{$K_s/D_{rec}=0$ (A smooth cylinder)} \\
+		\hline
+		(1) & All Re & $Nu_{for}=0.3+0.488\cdot Re^{0.5}\cdot \left(1+\left(\frac{Re}{282000}\right)^{0.625}\right)^{0.8}$\\
+		\hline
+		\multicolumn{3}{|c|}{$K_s/D_{rec}=75\times10^{-5}$} \\
+		\hline
+		(2) & $Re\le 7.0\times10^5$ & Use correlation (1) \\
+		\hline
+		(3) & $7.0\times10^5<Re<2.2\times10^7$ & $Nu_{for}=2.57\times10^{-3}\cdot Re^{0.98}$ \\
+		\hline
+		(4) & $Re\ge2.2\times10^7$ & $Nu_{for}=0.0455\cdot Re^{0.81}$ \\
+		\hline
+		\multicolumn{3}{|c|}{$K_s/D_{rec}=300\times10^{-5}$} \\
+		\hline
+		(5) & $Re\le 1.8\times10^5$ & Use correlation (1) \\
+		\hline
+		(6) & $1.8\times10^5<Re<4\times10^6$ & $Nu_{for}=0.0135\cdot Re^{0.89}$ \\
+		\hline
+		(7) & $Re\ge4\times10^6$ & Use correlation (4) \\
+		\hline
+		\multicolumn{3}{|c|}{$K_s/D_{rec}=900\times10^{-5}$} \\
+		\hline
+		(8) & $Re\le 1\times10^5 $ & Use correlation (1) \\
+		\hline
+		(9) & $Re>1\times10^5$ & Use correlation (4) \\
+		\hline
+	\end{tabularx}
+	\caption{Nusselt correlation for forced convection of external receivers \cite{Siebers.1984}}
+	\label{siebers_forced_external_convection}
+\end{table}\\
+where 
+\begin{itemize}
+	\item $K_s/D_{rec}$ = Surface roughness
+	\item $K_s$ = Radius of the receiver tube, m
+\end{itemize}
+
+\noindent \textbf{{Cengel [2003] \cite{Cengel.2003}:}}
+In this correlation, the fluid can be either gas or liquid but it is valid between the Reynolds number range of $4 \times 10^4 - 4 \times 10^5$. This correlation is used for the design of base-load nitrate salt central power plant by Abengoa \cite{Tilley.2014}. The research is carried out in Sandia national lab in US.\\
+\begin{equation} 
+Nu_{for}=0.027\cdot Re^{0.805}\cdot Pr^{1/3}
+\end{equation}
+\subsubsection{Radiative Heat Loss}
+The radiation heat loss, $\dot Q_{loss,rad}$ is simple for external receivers and it can be calculated using Stefan-Boltzmann law. The external receiver is coated with the black coating to increase the absorptivity. Generally, black pyromark is used to coat the receiver panels and housing \cite{Zavoico.2001}.
+\nomenclature[G]{$\sigma$}{Stefan-Boltzmann constant \nomunit{$W / m^2 K^4$}}
+\nomenclature[G]{$\epsilon$}{Emissivity \nomunit{-}}
+\nomenclature[Z]{ave}{Average}
+\begin{equation}
+\dot Q_{loss,rad}=\sigma \cdot \epsilon_{rec}\cdot A_{rec}\cdot (T_{s,ave}^4-T_{amb}^4)
+\end{equation}
+where  
+\begin{itemize}
+	\item $\sigma$ = Stefan-Boltzmann constant, $ 5.670 \cdot 10^{-8} W / m^2 K^4$ 
+	\item $\epsilon_{rec}$ = Emissivity of the receiver
+	\item $A_{rec}$ = Area of the receiver, $m^2$
+	\item $T_{s,ave}$ = Average surface temperature, K
+	\item $T_{amb}$ = Ambient temperature, K.
+\end{itemize}
+\subsection{Cavity Receiver}
+In this subsection, the heat transfer models specific for cavity receiver are discussed. In the cavity receivers, the absorber tubes are enclosed in a cavity to reduce the thermal losses. Like external receivers, the main thermal losses in the cavity receivers are convection heat loss and radiation heat loss.
+\subsubsection{Convective Heat Loss}
+Convection losses can be divided into natural convection due to buoyancy and forced convection due to the influence of wind velocity.  In order to find out which heat transfer is predominant, the Richardson number can be used \cite{Teichel.2011}. With the help of this number, it is easy to find out what kind of convection mechanism has to be included in the heat transfer model. Richardson number, $Ri$ is defined as the ratio of Grashof number to the square of Reynold’s number.
+\nomenclature[S]{Ri}{Richardson number \nomunit{-}}
+\begin{equation}
+Ri = Gr/Re^2
+\end{equation}
+\begin{itemize}
+	\item If the Richardson number is greater than unity, natural convection dominates over the forced convection. 
+	\item If it is much lower than unity which indicates that natural convection is negligible and the forced convection dominates the heat transfer.
+\end{itemize}
+\begin{figure}[h]
+	\includegraphics[width=0.8\textwidth]{figures/Richardson_number}
+	\centering
+	\caption{Variation of Richardson number with respect to wind velocity for cavity receiver \cite{Teichel.2011} }
+\end{figure}
+In order to have an idea about Richardson number, Teichel \cite{Teichel.2011} plotted the Richardson number with respect to varying wind speed shown in the \figurename{ 2.11}. From the \figurename{ 2.11}, one can conclude that the natural convection is dominant for the wind velocity less than 5 m/s. For wind velocities between 6 to 20 m/s, a mixed convection exists where both natural and forced convection have to be considered. For wind velocities higher than 25 m/s, the forced convection dominates and so the natural convection can be neglected. \\\\
+Generally, the wind velocity can never exceed 20 m/s at the height of the receiver \cite{Teichel.2011} and so only natural convection or mixed convection can be expected in the large central tower receivers. So, buoyancy effect has the significant influence on the heat transfer of convection losses.\\\\
+However, the forced convection on large-scale cavity receivers has not been sufficiently studied. But, there are several studies on small scale cavity receivers \cite{Prakash.2009} \cite{Taumoefolau.2004} and the heat losses due to wind velocity and direction \cite{Ma.1993} are also studied. Therefore, it is not well known whether these correlations can be applied to large central receivers of CSP towers. \\\\
+\textbf{Natural Convection Loss}
+\begin{figure}[h]
+	\includegraphics[width=0.5\textwidth]{figures/two_zone_model}
+	\centering
+	\caption{Two convection zones of the cavity receiver \cite{Flesch.2015} }
+\end{figure}\\\\
+\noindent Convection heat loss for the cavity receiver can be well explained with the two-zone model. The figure shows the stagnant zone and convective zone of the cavity receiver.
+\begin{itemize}
+      \item The stagnant zone is the region where the air is standing still and the temperature is close to the wall temperature \cite{Flesch.2015}.
+      \item The convection zone is the region where the cold air enters through the aperture opening, gets heated up and leaves through the top of the aperture \cite{Flesch.2015}.
+\end{itemize}  
+If the natural convection dominates, the stagnant zone is higher than the convective zone because the increasing wind speed can shrink the stagnant zone \cite{Flesch.2015}.\\\\
+In 1983, Clausing \cite{Clausing.1983} published the analytical and experimental modelling results with the test cavities in the cryogenic wind tunnel experiment conducted at the University of Illinois, Urbana-Champaign. Based on the results, he developed the natural convection heat transfer correlations and then he improved the correlations with the experimental work in 1987. Siebers and Kraabel \cite{Siebers.1984} also came up with the natural convection heat transfer correlations in 1984 and it was based on the experimental work on cubical cavities by Kraabel. \\\\
+\textbf{Clausing(1983) \cite{Clausing.1983}:}
+According to Clausing, the circulating flow inside the cavity is mainly due to the buoyancy effects at boundary layers of the active surfaces \cite{Feierabend.2010}. However, it can be affected by the wind inflow and its direction. Clausing considered the wind velocity in the bulk flow velocity inside the cavity.  Convection heat losses will not be greatly influenced by the wind velocity lower than 8 m/s.  He developed the correlation which allows calculating the heat transfer coefficient specific for each surface separately. \\\\
+This can be applied only if the heat transfer is dominated by internal resistance and the wind effect does not have high influence. This model is valid for Rayleigh number greater than $1.6 \times 10^9$ and the temperature ratio of wall to ambient is between 1 and 2.6. It is numerically validated for the no-wind and the head-on wind conditions. According to Teichel \cite{Teichel.2011}, the temperature ratio of the receiver is between 1.8 and 3.4 and so it is out range for some conditions. \\\\
+\textbf{Clausing(1987) \cite{Clausing.1987}:}
+Clausing updated his previous model by experimental investigation of smooth, isothermal cubic cavity with a variety of side facing apertures to predict the convection loss for large-scale solar receivers. The large scale receivers are modelled using the cryogenic wind tunnel at the University of Illinois, Urbana – Champaign. Using the results, Clausing came up with the correlation which was valid for larger Rayleigh numbers and the larger temperature ratio of wall to ambient so that it can be applied to large-scale solar receivers. \\\\
+Unlike the previous model, this model is developed with only one heat transfer coefficient using the aperture area for the calculation of convection loss. This model is valid for $3 \times 10^7$ $\le$ Ra $\le$ $ 3 \times 10^{10}$ and 1 $\le$ $T_w/T_{amb}$ $\le$ 3. The actual receiver condition of large scale receivers can have still higher Rayleigh numbers and so it might not be valid for all cases \cite{Teichel.2011}.\\\\
+\textbf{Siebers and Kraabel (1984) \cite{Siebers.1984}:}
+Siebers and Kraabel developed the loss correlations for both cylindrical and cavity receivers which is based on the large and small scale experiments and also with the available literature. He considered natural convection in large cavities is similar to large vertical flat plates.  He developed the Nusselt correlation for a simple cavity receiver with the validity range of $10^5$ $\le$ Gr $\le$ $10^{12}$. Then, the heat transfer correlation is like the simple convection heat transfer. But, the correction factor is introduced in order to account for aperture lips and the tilt angle of the cavity. This model is validated with the experimental measurements and it shows good accordance with the results.\\
+\textbf{Forced Convection Loss}\\[0.25 cm]
+Forced convection has a significant influence on the convective heat transfer but there are no reliable correlations are available to predict the forced convection heat transfer for the cavity receiver. The only simple correlation that can be applied to the cavity receiver is the correlation by Siebers and Kraabel \cite{Siebers.1984}. They used the forced convection correlation for the vertical flat plate in order to account for the wind effect. It is also validated with the experimental data. The overall heat transfer coefficient can be obtained by adding the natural and forced convection heat transfer together. \\\\
+While validating this correlation with 4.5 MW test receiver at Sandia Lab, the forced convection values are mostly over predicted and so it is a conservative model. The author states that the equation is expected to have an uncertainty of more than 50 percent \cite{Siebers.1984}.
+\subsubsection{Radiative Heat Loss}
+The radiation from active surfaces of the cavity receiver will directly or indirectly reach all the inactive surfaces and also it leaves to ambient through the aperture opening. It will re-radiate inside the cavity and will reach all active and inactive surfaces again. It is complex to find out the radiation heat losses accurately. But, it can be calculated by defining view factors and there are two widely used methods to calculate radiation heat loss \cite{Teichel.2011}. They are
+\begin{itemize}
+	\item Radiosity method
+	\item F-hat method
+\end{itemize}
+But, the view factors can be calculated using analytical or by ray tracing method. The analytical method is limited to the specific cavity geometry and for other geometries, ray tracing is used.

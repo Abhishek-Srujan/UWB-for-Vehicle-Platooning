@@ -1,0 +1,228 @@
+The main aim of this thesis focuses on the implementation of design method for external and cavity receivers in the in-house solar tower power plant design tool $devISE_{crs}$. This section describes the general overview of the Fraunhofer in-house solar power tower software and the implementation structure of the receiver module in the tool.
+\section{Software Description}
+\begin{figure}[h!]
+	\includegraphics[width=1\textwidth]{figures/flowchart_overall_software}
+	\centering
+	\caption{General structure of the in-house solar tower power plant design and simulation software}	
+\end{figure}
+As seen in the \figurename{ 4.1}, $devISE_{crs}$ is embedded in the ISE in-house tool for the design and simulation of the solar tower power plant. The brief function of each tool includes:
+\begin{itemize}
+	\item GUI (Graphical User Interface): It is used to get the inputs parameters from the users.
+	\item $devISE_{crs}$: A design tool to size the power plant based on the specified input parameters and to design all the sub modules of the power plant.
+	\item $ColSim_{csp}$: A transient plant simulation software which assess the annual yield of the power plant.
+	\item Post processor: A post processor which return the results back to the GUI for displaying to the user. 
+\end{itemize}
+The role of the $devISE_{crs}$ is the design part and to supply the inputs needed for the $ColSim_{csp}$. The following section describes about the $devISE_{crs}$ tool and its several modules.
+
+\section{$devISE_{crs}$ - A Design Tool}
+\begin{figure}[h!]
+	\includegraphics{figures/flowchart_devISEcrs_software}
+	\centering
+	\caption{Modules of the devISEcrs design tool}	
+\end{figure}
+There are four main modules in the $devISE_{crs}$ tool which will be discussed below:
+\begin{itemize}
+	\item The power block is the first module in the design tool and it computes the thermal power required for the power block, power block efficiency, mass flow rate and the gross to net conversion factor based on the design point calculations.
+	\item The next module is storage and currently it can design the two tank molten salt storage. It can able to compute the thermal power required for the storage, total mass and volume of the molten salt and also the dimensions of the tank.
+	\item The next module in the design flow is receiver module. The scope of the master thesis mainly deals with the design method of the receiver module and so it will be discussed separately in the next section. The receiver design method can be able to calculate the dimensions of two types of tubular receiver: external and cavity receiver, tower height, mass flow rate, pressure drop and the thermal losses of receiver.
+	\item  The last module is the solar field which will design the solar field layout and the optical losses of the solar field. 
+\end{itemize}  
+\section{Implementation Structure of Receiver Module in devISEcrs}
+As the $devISE_{crs}$ tool is written in Python, the receiver module is also implemented in Python. It is highly object oriented. The documentation of code is done using doxygen style. The structure of receiver design method implementation and the main functions are shown in the \figurename{ 4.3}. \\\\
+\begin{figure}[h!]
+	\includegraphics{figures/inheritance_structure}
+	\centering
+	\caption{Class inheritance structure of the receiver module in devISEcrs}	
+\end{figure}
+The receiver module includes the design method for two types of receivers and it shares some design steps. So the inheritance structure is used to implement the two types of the receiver. The functionalities which are common to both receivers are placed in the receiver class and the two types of the receiver class are inherited from the receiver class. In each type of receiver class, there are two main functions design and efficiency. The design function which calls the other functions receiver geometry, receiver tube and panel, tower height and many sub functions to design and size the receiver. The efficiency function which calculates the receiver efficiency by calling several other losses function.\\\\
+The receiver module needs the two main inputs from the power block and storage module to design the receiver which are thermal power required for the power block and the solar multiple. It is implemented in such a way that the other design parameters can either be given as an input parameter or can be calculated inside the receiver module. It can also be possible to call the particular function to perform specific design or to calculate only thermal losses for the existing receiver. The outputs from the receiver module is returned as a named tuple containing all the necessary parameters needed for the solar field module. \\\\
+The current model allows the user to design with the receiver fluid molten salt and liquid sodium. The user can also specify the properties of any specific fluid and can be able to design the receiver. The other receiver fluids can also be incorporated in the model with ease. \\\\
+The other parameters like design velocity of the receiver fluid, absorptivity of the coating, design wind velocity, inlet and outlet temperature of the receiver fluid and many other parameters are given default nominal value inside the receiver module. But all the parameters will be overwritten if the user specifies its value. The input and output parameters of the particular class and its default values are tabulated in the next section.
+
+\section{Inputs/outputs of Receiver Module}
+This section describes the input and output parameters of the receiver classes and also the used default values of some input parameters. 
+\subsection{Receiver class}
+\subsubsection{Input parameters and its default values:}
+\begin{table}[h!]
+	\begin{center}
+		\begin{tabular}{ |c|c|c|c| } 
+			\hline
+			\textbf{Name} & \textbf{Default value} & \textbf{Unit} \\
+			\hline
+			Thermal power required for power block & - & $W$\\
+			\hline
+			 Solar multiple & - & - \\ 
+			\hline
+			Assumed receiver thermal efficiency & $0.9$	& - \\ 
+			\hline
+			Temperature of hot fluid out & $565$ & °C \\
+			\hline
+			Temperature of cold fluid in & $288$ & °C \\
+			\hline
+			Ambient temperature & $298$ & $ K $ \\
+			\hline
+			Absorptivity of the receiver surface & $0.97 $ & - \\
+			\hline
+			Velocity of the receiver fluid & $4$ &  $ m/s $ \\
+			\hline
+			Wind velocity & $8$ &  $m/s$ \\
+			\hline
+			Emissivity of the receiver surface & $0.88$ & - \\
+			\hline
+			Absolute viscosity of air  & $1.846 \times 10^{-5}$ & $Kg/m s$ \\
+			\hline
+			Kinematic viscosity of air  & $1.568 \times 10^{-5}$ & $ m^2/s $ \\
+			\hline
+			Specific heat of air  & $1005$ & $J/kg K$ \\
+			\hline
+			Volumetric expansion coefficient of air  & $3.43 \times 10^{-3}$ & $1 / K$ \\
+			\hline
+			Thermal conductivity of air  & $0.0257$ & $W/m K$ \\
+			\hline
+			Thermal conductivity of receiver tube & $23.9 $ & $W/m K$ \\
+			\hline
+			Efficiency of pump & $0.8$ & - \\
+			\hline
+		\end{tabular}
+		\caption{Input parameters and its default value of the receiver class}
+		\label{Receiver class input parameters}
+	\end{center}
+\end{table}
+\subsection{External receiver class}
+\subsubsection{Design input parameters and its default values:}
+These are the input parameters specific for external receivers. 
+\begin{table}[h!]
+	\begin{center}
+		\begin{tabular}{ |c|c|c|c| } 
+			\hline
+			\textbf{Name} & \textbf{Default value} & \textbf{Unit} \\
+			\hline
+			Heat transfer fluid & Molten salt & - \\
+			\hline
+			Receiver aspect ratio & $1.5$ & - \\
+			\hline
+			Outer diameter of receiver tube & Diameter correlation & $m$ \\
+			\hline
+			Thickness of receiver tube & $0.002$ & $m$ \\
+			\hline
+			Number of flow path & $2$ & - \\
+			\hline
+			Tower height & Tower correlation & $m$ \\
+			\hline
+		\end{tabular}
+		\caption{Input parameters and its default value of the external receiver class}
+		\label{External receiver class input parameters}
+	\end{center}
+\end{table}
+\subsubsection{Output parameters:} 
+\begin{table}[h!]
+	\begin{center}
+		\begin{tabular}{ |c|c|c|c| } 
+			\hline
+			\textbf{Name} & \textbf{Unit} \\
+			\hline
+			Area of the receiver & $m^2$ \\
+			\hline
+		    Height of the receiver & $m$ \\
+			\hline
+			Diameter of the receiver & $m$ \\
+			\hline
+			Outer diameter of receiver tube & $m$ \\
+		    \hline
+			Thickness of receiver tube & $m$ \\
+		    \hline
+			Number of panels & - \\
+			\hline
+			Number of tubes per panel & - \\
+			\hline
+			Tower height & $m$ \\
+			\hline
+			Mass flow rate of the fluid & $kg/s$ \\
+			\hline
+			Minimum allowable mass flow rate & $kg/s$ \\
+			\hline
+			Incident receiver thermal power & $W$ \\
+			\hline
+		\end{tabular}
+		\caption{Output parameters of the external receiver class}
+		\label{External receiver class output parameters}
+	\end{center}
+\end{table}
+\subsection{Cavity receiver class}
+\subsubsection{Input parameters and its default values:}
+These are the input parameters specific for cavity receivers.
+\begin{table}[h!]
+	\begin{center}
+		\begin{tabular}{ |c|c|c|c| } 
+			\hline
+			\textbf{Name} & \textbf{Default value} & \textbf{Unit} \\
+			\hline
+			Heat transfer fluid & Molten salt & - \\
+			\hline
+			Receiver aspect ratio & $1$ & - \\
+			\hline
+			Cavity opening angle & $180$ & $degrees$ \\
+			\hline
+			Aperture to total height ratio & $0.75$ & - \\
+			\hline
+			Aperture to total width ratio & $1$ & - \\
+			\hline
+			Outer diameter of receiver tube & Diameter correlation & $m$ \\
+			\hline
+			Thickness of receiver tube & $0.002$ & $m$ \\
+			\hline
+			Number of flow path & $2$ & - \\
+			\hline
+			Cavity inclination angle & $0$ &  $degrees$ \\
+			\hline
+			Tower height & Tower correlation & $m$ \\
+			\hline
+			Tower Orientation & $180$ & $degrees$ \\
+			\hline
+		\end{tabular}
+		\caption{Input parameters and its default value of the cavity receiver class}
+		\label{Cavity receiver class input parameters}
+	\end{center}
+\end{table}
+\subsubsection{Output parameters:} 
+\begin{table}[h!]
+	\begin{center}
+		\begin{tabular}{ |c|c|c|c| } 
+			\hline
+			\textbf{Name} & \textbf{Unit} \\
+			\hline
+			Area of the receiver & $m^2$ \\
+			\hline
+			Total height of the receiver & $m$ \\
+			\hline
+			Diameter of the receiver & $m$ \\
+			\hline
+			Lip height & $m$ \\
+			\hline
+			Outer diameter of receiver tube & $m$ \\
+			\hline
+			Thickness of receiver tube & $m$ \\
+			\hline
+			Number of panels & - \\
+			\hline
+			Number of tubes per panel & - \\
+			\hline
+			Cavity opening angle & $degrees$ \\
+			\hline
+			Cavity inclination angle & $degrees$ \\
+			\hline
+			Tower height& $m$ \\
+			\hline
+			Mass flow rate of the fluid & $kg/s$ \\
+			\hline
+			Minimum allowable mass flow rate & $kg/s$ \\
+			\hline
+			Incident receiver thermal power & $W$ \\
+			\hline
+			Receiver normal vector & - \\
+			\hline
+		\end{tabular}
+		\caption{Output parameters of the cavity receiver class}
+		\label{Cavity receiver class output parameters}
+	\end{center}
+\end{table}

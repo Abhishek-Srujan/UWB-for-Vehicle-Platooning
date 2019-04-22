@@ -1,0 +1,1382 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Ahmed%
+\ \BBA {} Ramon%
+}{%
+Ahmed%
+\ \BBA {} Ramon%
+}{%
+{\protect \APACyear {2008}}%
+}]{%
+ahmed2008impact}
+\APACinsertmetastar {%
+ahmed2008impact}%
+\begin{APACrefauthors}%
+Ahmed, B\BPBI T.%
+\BCBT {}\ \BBA {} Ramon, M\BPBI C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {On the impact of ultra-wideband {(UWB)} on macrocell
+  downlink of UMTS and CDMA-450 systems} {On the impact of ultra-wideband
+  {(UWB)} on macrocell downlink of umts and cdma-450 systems}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Transactions on Electromagnetic
+  Compatibility}{50}{2}{406--412}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Bergenhem%
+, Huang%
+, Benmimoun%
+\BCBL {}\ \BBA {} Robinson%
+}{%
+Bergenhem%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2010}}%
+}]{%
+bergenhem2010challenges}
+\APACinsertmetastar {%
+bergenhem2010challenges}%
+\begin{APACrefauthors}%
+Bergenhem, C.%
+, Huang, Q.%
+, Benmimoun, A.%
+\BCBL {}\ \BBA {} Robinson, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Challenges of platooning on public motorways}
+  {Challenges of platooning on public motorways}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {17th world congress on intelligent transport systems}
+  {17th world congress on intelligent transport systems}\ (\BPGS\ 1--12).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Chan%
+, Gilhead%
+, Jelinek%
+, Krejci%
+\BCBL {}\ \BBA {} Robinson%
+}{%
+Chan%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2012}}%
+}]{%
+chan2012cooperative}
+\APACinsertmetastar {%
+chan2012cooperative}%
+\begin{APACrefauthors}%
+Chan, E.%
+, Gilhead, P.%
+, Jelinek, P.%
+, Krejci, P.%
+\BCBL {}\ \BBA {} Robinson, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Cooperative control of SARTRE automated platoon
+  vehicles} {Cooperative control of sartre automated platoon vehicles}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {19th ITS World Congress, Vienna, Austria} {19th its
+  world congress, vienna, austria}\ (\BPGS\ 22--26).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Chen%
+, Jiang%
+\BCBL {}\ \BBA {} Delgrossi%
+}{%
+Chen%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2009}}%
+}]{%
+chen2009ieee}
+\APACinsertmetastar {%
+chen2009ieee}%
+\begin{APACrefauthors}%
+Chen, Q.%
+, Jiang, D.%
+\BCBL {}\ \BBA {} Delgrossi, L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {IEEE 1609.4 DSRC multi-channel operations and its
+  implications on vehicle safety communications} {Ieee 1609.4 dsrc
+  multi-channel operations and its implications on vehicle safety
+  communications}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {2009 IEEE vehicular networking conference (VNC)} {2009
+  ieee vehicular networking conference (vnc)}\ (\BPGS\ 1--8).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Chiani%
+\ \BBA {} Giorgetti%
+}{%
+Chiani%
+\ \BBA {} Giorgetti%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+chiani2009coexistence}
+\APACinsertmetastar {%
+chiani2009coexistence}%
+\begin{APACrefauthors}%
+Chiani, M.%
+\BCBT {}\ \BBA {} Giorgetti, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Coexistence between {UWB} and narrow-band wireless
+  communication systems} {Coexistence between {UWB} and narrow-band wireless
+  communication systems}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Proceedings of the IEEE}{97}{2}{231--254}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Committee%
+\ \protect \BOthers {.}}{%
+Committee%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1997}}%
+}]{%
+ieee1997wireless}
+\APACinsertmetastar {%
+ieee1997wireless}%
+\begin{APACrefauthors}%
+Committee, I\BPBI C\BPBI S\BPBI L\BPBI M\BPBI S.%
+\BCBT {}\ \BOthersPeriod {.}
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1997}{}{}.
+\newblock
+\APACrefbtitle {Wireless LAN medium access control {(MAC)} and physical layer
+  {(PHY)} specifications.} {Wireless lan medium access control {(MAC)} and
+  physical layer {(PHY)} specifications.}
+\newblock
+\APACaddressPublisher{}{IEEE Std}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+D{\'a}vila%
+\ \BBA {} Nombela%
+}{%
+D{\'a}vila%
+\ \BBA {} Nombela%
+}{%
+{\protect \APACyear {2010}}%
+}]{%
+davila2010sartre}
+\APACinsertmetastar {%
+davila2010sartre}%
+\begin{APACrefauthors}%
+D{\'a}vila, A.%
+\BCBT {}\ \BBA {} Nombela, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Sartre: Safe road trains for the environment} {Sartre:
+  Safe road trains for the environment}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Conference on Personal Rapid Transit PRT@ LHR}
+  {Conference on personal rapid transit prt@ lhr}\ (\BVOL~3, \BPGS\ 2--3).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Decawave%
+}{%
+Decawave%
+}{%
+{\protect \APACyear {2015}}%
+{\protect \APACexlab {{\protect \BCnt {1}}}}}]{%
+DW1000DataSheet}
+\APACinsertmetastar {%
+DW1000DataSheet}%
+\begin{APACrefauthors}%
+Decawave.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015{\protect \BCnt {1}}}{}{}.
+\newblock
+\APACrefbtitle {DW1000 datasheet.} {Dw1000 datasheet.}
+\newblock
+\begin{APACrefURL}
+  [{2015-07-24}]\url{http://www.decawave.com/support/DWM1000_data_sheet.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Decawave%
+}{%
+Decawave%
+}{%
+{\protect \APACyear {2015}}%
+{\protect \APACexlab {{\protect \BCnt {2}}}}}]{%
+DW1000UserManual}
+\APACinsertmetastar {%
+DW1000UserManual}%
+\begin{APACrefauthors}%
+Decawave.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015{\protect \BCnt {2}}}{}{}.
+\newblock
+\APACrefbtitle {DW1000 user manual.} {Dw1000 user manual.}
+\newblock
+\begin{APACrefURL}
+  [{2015-07-24}]\url{http://www.decawave.com/support/dw1000_user_manual.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+De~Vos%
+, Theeuwes%
+, Hoekstra%
+\BCBL {}\ \BBA {} Co{\"e}met%
+}{%
+De~Vos%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1997}}%
+}]{%
+de1997behavioral}
+\APACinsertmetastar {%
+de1997behavioral}%
+\begin{APACrefauthors}%
+De~Vos, A.%
+, Theeuwes, J.%
+, Hoekstra, W.%
+\BCBL {}\ \BBA {} Co{\"e}met, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1997}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Behavioral aspects of automatic vehicle guidance:
+  Relationship between headway and driver comfort} {Behavioral aspects of
+  automatic vehicle guidance: Relationship between headway and driver
+  comfort}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Transportation Research Record: Journal of the
+  Transportation Research Board}{}{1573}{17--22}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Doi%
+\ \protect \BOthers {.}}{%
+Doi%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2004}}%
+}]{%
+doi2004frequency}
+\APACinsertmetastar {%
+doi2004frequency}%
+\begin{APACrefauthors}%
+Doi, T.%
+, Matsumura, T.%
+, Mizutani, K.%
+, Tsuji, H.%
+, Wakana, H.%
+, Ohmori, S.%
+\BCBL {}\ \BBA {} Kohno, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2004}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Frequency hopping ultra wideband inter-vehicle radar
+  system using chirp waveforms} {Frequency hopping ultra wideband inter-vehicle
+  radar system using chirp waveforms}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Ultra Wideband Systems, 2004. Joint with Conference on
+  Ultrawideband Systems and Technologies. Joint UWBST \& IWUWBS. 2004
+  International Workshop on} {Ultra wideband systems, 2004. joint with
+  conference on ultrawideband systems and technologies. joint uwbst \& iwuwbs.
+  2004 international workshop on}\ (\BPGS\ 386--390).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Drane%
+\ \BBA {} Rizos%
+}{%
+Drane%
+\ \BBA {} Rizos%
+}{%
+{\protect \APACyear {1998}}%
+}]{%
+drane1998positioning}
+\APACinsertmetastar {%
+drane1998positioning}%
+\begin{APACrefauthors}%
+Drane, C\BPBI R.%
+\BCBT {}\ \BBA {} Rizos, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1998}.
+\newblock
+\APACrefbtitle {Positioning systems in intelligent transportation systems}
+  {Positioning systems in intelligent transportation systems}.
+\newblock
+\APACaddressPublisher{}{Artech House, Inc.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+ECC%
+}{%
+ECC%
+}{%
+{\protect \APACyear {2006}}%
+}]{%
+ECCDecision}
+\APACinsertmetastar {%
+ECCDecision}%
+\begin{APACrefauthors}%
+ECC.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{March}{}.
+\newblock
+\APACrefbtitle {The harmonised conditions for devices using Ultra-Wideband
+  {(UWB)} technology in bands below 10.6 GHz.} {The harmonised conditions for
+  devices using ultra-wideband {(UWB)} technology in bands below 10.6 ghz.}
+\newblock
+\begin{APACrefURL}
+  [{2006-03-24}]\url{http://www.erodocdb.dk/docs/doc98/official/pdf/ECCDec0604.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Elbahhar%
+, Rivenq%
+, Heddebaut%
+\BCBL {}\ \BBA {} Rouvaen%
+}{%
+Elbahhar%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2005}}%
+}]{%
+elbahhar2005using}
+\APACinsertmetastar {%
+elbahhar2005using}%
+\begin{APACrefauthors}%
+Elbahhar, F.%
+, Rivenq, A.%
+, Heddebaut, M.%
+\BCBL {}\ \BBA {} Rouvaen, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Using {UWB} Gaussian pulses for inter-vehicle
+  communications} {Using {UWB} gaussian pulses for inter-vehicle
+  communications}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEE Proceedings-Communications}{152}{2}{229--234}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+El-Rabbany%
+}{%
+El-Rabbany%
+}{%
+{\protect \APACyear {2002}}%
+}]{%
+el2002introduction}
+\APACinsertmetastar {%
+el2002introduction}%
+\begin{APACrefauthors}%
+El-Rabbany, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2002}.
+\newblock
+\APACrefbtitle {Introduction to GPS: the global positioning system}
+  {Introduction to gps: the global positioning system}.
+\newblock
+\APACaddressPublisher{}{Artech House}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Ezell%
+}{%
+Ezell%
+}{%
+{\protect \APACyear {2010}}%
+}]{%
+ezell2010explaining}
+\APACinsertmetastar {%
+ezell2010explaining}%
+\begin{APACrefauthors}%
+Ezell, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Explaining international it application leadership:
+  Intelligent transportation systems} {Explaining international it application
+  leadership: Intelligent transportation systems}.{\BBCQ}
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Facts%
+}{%
+Facts%
+}{%
+{\protect \APACyear {2008}}%
+}]{%
+facts2008data}
+\APACinsertmetastar {%
+facts2008data}%
+\begin{APACrefauthors}%
+Facts, T\BPBI S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Data: Older Population} {Data: Older population}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{National Highway Trafific Safety Administration}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+F{\i}nd{\i}kl{\i}%
+, Erk{\"u}{\c{c}}{\"u}k%
+\BCBL {}\ \BBA {} {\c{C}}elebi%
+}{%
+F{\i}nd{\i}kl{\i}%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2011}}%
+}]{%
+findikli2011performance}
+\APACinsertmetastar {%
+findikli2011performance}%
+\begin{APACrefauthors}%
+F{\i}nd{\i}kl{\i}, {\c{C}}.%
+, Erk{\"u}{\c{c}}{\"u}k, S.%
+\BCBL {}\ \BBA {} {\c{C}}elebi, M\BPBI E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Performance of {IEEE} 802.15. 4a systems in the presence
+  of narrowband interference} {Performance of {IEEE} 802.15. 4a systems in the
+  presence of narrowband interference}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Ultra-Wideband (ICUWB), 2011 IEEE International
+  Conference on} {Ultra-wideband (icuwb), 2011 ieee international conference
+  on}\ (\BPGS\ 395--399).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+GmbH%
+}{%
+GmbH%
+}{%
+{\protect \APACyear {2015}}%
+}]{%
+cohdaMK5}
+\APACinsertmetastar {%
+cohdaMK5}%
+\begin{APACrefauthors}%
+GmbH, C\BPBI W\BPBI E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+\APACrefbtitle {MK5 On Board Unit.} {Mk5 on board unit.}
+\newblock
+\begin{APACrefURL}
+  [{2015-07-24}]\url{http://cohdawireless.com/Portals/0/MK5_OBU_10122015.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+H{\"a}m{\"a}l{\"a}inen%
+, Saloranta%
+, M{\"a}kel{\"a}%
+, Oppermann%
+\BCBL {}\ \BBA {} Patana%
+}{%
+H{\"a}m{\"a}l{\"a}inen%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2003}}%
+}]{%
+hamalainen2003ultra}
+\APACinsertmetastar {%
+hamalainen2003ultra}%
+\begin{APACrefauthors}%
+H{\"a}m{\"a}l{\"a}inen, M.%
+, Saloranta, J.%
+, M{\"a}kel{\"a}, J\BHBI P.%
+, Oppermann, I.%
+\BCBL {}\ \BBA {} Patana, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2003}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Ultra-wideband signal impact on the performances of IEEE
+  802.11 b and bluetooth networks} {Ultra-wideband signal impact on the
+  performances of ieee 802.11 b and bluetooth networks}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{International Journal of Wireless Information
+  Networks}{10}{4}{201--210}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Haykin%
+}{%
+Haykin%
+}{%
+{\protect \APACyear {2008}}%
+}]{%
+haykin2008communication}
+\APACinsertmetastar {%
+haykin2008communication}%
+\begin{APACrefauthors}%
+Haykin, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2008}.
+\newblock
+\APACrefbtitle {Communication systems} {Communication systems}.
+\newblock
+\APACaddressPublisher{}{John Wiley \& Sons}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+IEEE802.11p%
+}{%
+IEEE802.11p%
+}{%
+{\protect \APACyear {2015}}%
+}]{%
+802.11pStandard}
+\APACinsertmetastar {%
+802.11pStandard}%
+\begin{APACrefauthors}%
+IEEE802.11p, T\BPBI G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+\APACrefbtitle {{IEEE} Standard for Information Technology- Wireless Access in
+  Vehicular Environments.} {{IEEE} standard for information technology-
+  wireless access in vehicular environments.}
+\newblock
+\begin{APACrefURL}
+  [{2015-07-15}]\url{https://www.ietf.org/mail-archive/web/its/current/pdfqf992dHy9x.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Intel%
+}{%
+Intel%
+}{%
+{\protect \APACyear {2015}}%
+}]{%
+IntelUWB}
+\APACinsertmetastar {%
+IntelUWB}%
+\begin{APACrefauthors}%
+Intel.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{June}{}.
+\newblock
+\APACrefbtitle {Ultra-Wideband (UWB) Technology.} {Ultra-wideband (uwb)
+  technology.}
+\newblock
+\begin{APACrefURL}
+  [{2015-06-01}]\url{http://www.usb.org/wusb/docs/Ultra-Wideband.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Ipatov%
+}{%
+Ipatov%
+}{%
+{\protect \APACyear {1979}}%
+}]{%
+ipatov1979ternary}
+\APACinsertmetastar {%
+ipatov1979ternary}%
+\begin{APACrefauthors}%
+Ipatov, V.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1979}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Ternary sequences with ideal periodic autocorrelation
+  properties} {Ternary sequences with ideal periodic autocorrelation
+  properties}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Radio Engineering and Electronic
+  Physics}{24}{}{75--79}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Kahaner%
+}{%
+Kahaner%
+}{%
+{\protect \APACyear {2015}}%
+}]{%
+fleetOwner}
+\APACinsertmetastar {%
+fleetOwner}%
+\begin{APACrefauthors}%
+Kahaner, L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{may}{}.
+\newblock
+\APACrefbtitle {Platooning is closer than you think – just like the trucks.}
+  {Platooning is closer than you think – just like the trucks.}
+\newblock
+\begin{APACrefURL}
+  [{2015-05-29}]\url{http://fleetowner.com/driver-management-resource-center/platooning-closer-you-think-just-trucks/}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Karapistoli%
+, Pavlidou%
+, Gragopoulos%
+\BCBL {}\ \BBA {} Tsetsinas%
+}{%
+Karapistoli%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2010}}%
+}]{%
+karapistoli2010overview}
+\APACinsertmetastar {%
+karapistoli2010overview}%
+\begin{APACrefauthors}%
+Karapistoli, E.%
+, Pavlidou, F\BHBI N.%
+, Gragopoulos, I.%
+\BCBL {}\ \BBA {} Tsetsinas, I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {An overview of the IEEE 802.15. 4a standard} {An
+  overview of the ieee 802.15. 4a standard}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Communications Magazine}{48}{1}{47--53}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Kohno%
+}{%
+Kohno%
+}{%
+{\protect \APACyear {2008}}%
+}]{%
+kohno2008latest}
+\APACinsertmetastar {%
+kohno2008latest}%
+\begin{APACrefauthors}%
+Kohno, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Latest regulation and R\&D for {UWB} inter-vehicle radar
+  in millimeter wave band} {Latest regulation and r\&d for {UWB} inter-vehicle
+  radar in millimeter wave band}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {ITS Telecommunications, 2008. ITST 2008. 8th
+  International Conference on} {Its telecommunications, 2008. itst 2008. 8th
+  international conference on}\ (\BPGS\ 4--4).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Kristem%
+, Niranjayan%
+, Sangodoyin%
+\BCBL {}\ \BBA {} Molisch%
+}{%
+Kristem%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2014}}%
+}]{%
+kristem2014experimental}
+\APACinsertmetastar {%
+kristem2014experimental}%
+\begin{APACrefauthors}%
+Kristem, V.%
+, Niranjayan, S.%
+, Sangodoyin, S.%
+\BCBL {}\ \BBA {} Molisch, A\BPBI F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Experimental determination of {UWB} ranging errors in an
+  outdoor environment} {Experimental determination of {UWB} ranging errors in
+  an outdoor environment}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {2014 IEEE International Conference on Communications
+  (ICC)} {2014 ieee international conference on communications (icc)}\ (\BPGS\
+  4838--4843).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Lammert%
+, Duran%
+, Diez%
+, Burton%
+\BCBL {}\ \BBA {} Nicholson%
+}{%
+Lammert%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2014}}%
+}]{%
+NREL}
+\APACinsertmetastar {%
+NREL}%
+\begin{APACrefauthors}%
+Lammert, M\BPBI P.%
+, Duran, A.%
+, Diez, J.%
+, Burton, K.%
+\BCBL {}\ \BBA {} Nicholson, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Effect of platooning on fuel consumption of class 8
+  vehicles over a range of speeds, following distances, and mass} {Effect of
+  platooning on fuel consumption of class 8 vehicles over a range of speeds,
+  following distances, and mass}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{SAE International Journal of Commercial
+  Vehicles}{7}{2014-01-2438}{626--639}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Lanzisera%
+\ \BBA {} Pister%
+}{%
+Lanzisera%
+\ \BBA {} Pister%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+lanzisera2009rf}
+\APACinsertmetastar {%
+lanzisera2009rf}%
+\begin{APACrefauthors}%
+Lanzisera, S\BPBI M.%
+\BCBT {}\ \BBA {} Pister, K.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2009}.
+\unskip\
+\newblock
+\APACrefbtitle {{RF} ranging for location awareness} {{RF} ranging for location
+  awareness}\ \APACtypeAddressSchool {\BUPhD}{}{}.
+\unskip\
+\newblock
+\APACaddressSchool {}{University of California, Berkeley}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Lewandowski%
+, Putzke%
+, Koster%
+\BCBL {}\ \BBA {} Wietfeld%
+}{%
+Lewandowski%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2010}}%
+}]{%
+lewandowski2010coexistence}
+\APACinsertmetastar {%
+lewandowski2010coexistence}%
+\begin{APACrefauthors}%
+Lewandowski, A.%
+, Putzke, M.%
+, Koster, V.%
+\BCBL {}\ \BBA {} Wietfeld, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Coexistence of 802.11 b and 802.15. 4a-CSS:
+  Measurements, Analytical Model and Simulation} {Coexistence of 802.11 b and
+  802.15. 4a-css: Measurements, analytical model and simulation}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Vehicular Technology Conference (VTC 2010-Spring), 2010
+  {IEEE} 71st} {Vehicular technology conference (vtc 2010-spring), 2010 {IEEE}
+  71st}\ (\BPGS\ 1--6).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Mecklenbrauker%
+\ \protect \BOthers {.}}{%
+Mecklenbrauker%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2011}}%
+}]{%
+mecklenbrauker2011vehicular}
+\APACinsertmetastar {%
+mecklenbrauker2011vehicular}%
+\begin{APACrefauthors}%
+Mecklenbrauker, C\BPBI F.%
+, Molisch, A\BPBI F.%
+, Karedal, J.%
+, Tufvesson, F.%
+, Paier, A.%
+, Bernad{\'o}, L.%
+\BDBL {}Czink, N.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Vehicular channel characterization and its implications
+  for wireless system design and performance} {Vehicular channel
+  characterization and its implications for wireless system design and
+  performance}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Proceedings of the IEEE}{99}{7}{1189--1212}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Mirzoev%
+\ \protect \BOthers {.}}{%
+Mirzoev%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2014}}%
+}]{%
+gutierrez2004low}
+\APACinsertmetastar {%
+gutierrez2004low}%
+\begin{APACrefauthors}%
+Mirzoev, D.%
+\BCBT {}\ \BOthersPeriod {.}
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Low Rate Wireless Personal Area Networks (LR-WPAN
+  802.15. 4 standard)} {Low rate wireless personal area networks (lr-wpan
+  802.15. 4 standard)}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{arXiv preprint arXiv:1404.2345}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Mishra%
+, Brodersen%
+, ten Brink%
+\BCBL {}\ \BBA {} Mahadevappa%
+}{%
+Mishra%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2007}}%
+}]{%
+mishra2007detect}
+\APACinsertmetastar {%
+mishra2007detect}%
+\begin{APACrefauthors}%
+Mishra, S\BPBI M.%
+, Brodersen, R\BPBI W.%
+, ten Brink, S.%
+\BCBL {}\ \BBA {} Mahadevappa, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Detect and avoid: an ultra-wideband/WiMAX coexistence
+  mechanism [Topics in Radio Communications]} {Detect and avoid: an
+  ultra-wideband/wimax coexistence mechanism [topics in radio
+  communications]}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Communications Magazine}{45}{6}{68--75}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+NXP%
+}{%
+NXP%
+}{%
+{\protect \APACyear {2015}}%
+}]{%
+LPCUserManual}
+\APACinsertmetastar {%
+LPCUserManual}%
+\begin{APACrefauthors}%
+NXP.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+\APACrefbtitle {LPCXpresso4337 user manual.} {Lpcxpresso4337 user manual.}
+\newblock
+\begin{APACrefURL}
+  [{2015-12-10}]\url{http://www.nxp.com/documents/user_manual/UM10503.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Petovello%
+\ \protect \BOthers {.}}{%
+Petovello%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2012}}%
+}]{%
+petovello2012demonstration}
+\APACinsertmetastar {%
+petovello2012demonstration}%
+\begin{APACrefauthors}%
+Petovello, M\BPBI G.%
+, O’Keefe, K.%
+, Chan, B.%
+, Spiller, S.%
+, Pedrosa, C.%
+, Xie, P.%
+\BCBL {}\ \BBA {} Basnayake, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Demonstration of inter-vehicle UWB ranging to augment
+  DGPS for improved relative positioning} {Demonstration of inter-vehicle uwb
+  ranging to augment dgps for improved relative positioning}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Global Positioning Systems}{11}{1}{11--21}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Reding%
+}{%
+Reding%
+}{%
+{\protect \APACyear {2007}}%
+}]{%
+reding2007commission}
+\APACinsertmetastar {%
+reding2007commission}%
+\begin{APACrefauthors}%
+Reding, V.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Commission decision on the harmonised use of radio
+  spectrum in the 2 GHz frequency bands for the implementation of systems
+  providing mobile satellite services} {Commission decision on the harmonised
+  use of radio spectrum in the 2 ghz frequency bands for the implementation of
+  systems providing mobile satellite services}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Comisi{\'o}n Europea, documento C}{409}{}{14}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Sadowski%
+\ \BBA {} Sadowski%
+}{%
+Sadowski%
+\ \BBA {} Sadowski%
+}{%
+{\protect \APACyear {2011}}%
+}]{%
+sadowski2011narrowband}
+\APACinsertmetastar {%
+sadowski2011narrowband}%
+\begin{APACrefauthors}%
+Sadowski, J.%
+\BCBT {}\ \BBA {} Sadowski, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Narrowband transmission quality in presence of modified
+  {IEEE} 802.15. 4a impulse radio interference} {Narrowband transmission
+  quality in presence of modified {IEEE} 802.15. 4a impulse radio
+  interference}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {10th International Symposium on Electromagnetic
+  Compatibility.} {10th international symposium on electromagnetic
+  compatibility.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Sakkila%
+\ \protect \BOthers {.}}{%
+Sakkila%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2008}}%
+}]{%
+sakkila2008uwb}
+\APACinsertmetastar {%
+sakkila2008uwb}%
+\begin{APACrefauthors}%
+Sakkila, L.%
+, Tatkeu, C.%
+, Boukour, F.%
+, El~Hillali, Y.%
+, Rivenq, A.%
+\BCBL {}\ \BBA {} Rouvean, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{UWB} Radar system for road anti-collision application}
+  {{UWB} radar system for road anti-collision application}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Information and Communication Technologies: From Theory
+  to Applications, 2008. ICTTA 2008. 3rd International Conference on}
+  {Information and communication technologies: From theory to applications,
+  2008. ictta 2008. 3rd international conference on}\ (\BPGS\ 1--6).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Shladover%
+}{%
+Shladover%
+}{%
+{\protect \APACyear {2005}}%
+}]{%
+shladover2005automated}
+\APACinsertmetastar {%
+shladover2005automated}%
+\begin{APACrefauthors}%
+Shladover, S\BPBI E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Automated vehicles for highway operations (automated
+  highway systems)} {Automated vehicles for highway operations (automated
+  highway systems)}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Proceedings of the Institution of Mechanical Engineers,
+  Part I: Journal of Systems and Control Engineering}{219}{1}{53--75}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Soganci%
+, Gezici%
+\BCBL {}\ \BBA {} Poor%
+}{%
+Soganci%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2011}}%
+}]{%
+soganci2011accurate}
+\APACinsertmetastar {%
+soganci2011accurate}%
+\begin{APACrefauthors}%
+Soganci, H.%
+, Gezici, S.%
+\BCBL {}\ \BBA {} Poor, H\BPBI V.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Accurate positioning in ultra-wideband systems}
+  {Accurate positioning in ultra-wideband systems}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Wireless Communications}{18}{2}{19--27}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Taha%
+\ \BBA {} Chugg%
+}{%
+Taha%
+\ \BBA {} Chugg%
+}{%
+{\protect \APACyear {2002}}%
+}]{%
+taha2002theoretical}
+\APACinsertmetastar {%
+taha2002theoretical}%
+\begin{APACrefauthors}%
+Taha, A.%
+\BCBT {}\ \BBA {} Chugg, K\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2002}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A theoretical study on the effects of interference {UWB}
+  multiple access impulse radio} {A theoretical study on the effects of
+  interference {UWB} multiple access impulse radio}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Signals, Systems and Computers, 2002. Conference Record
+  of the Thirty-Sixth Asilomar Conference on} {Signals, systems and computers,
+  2002. conference record of the thirty-sixth asilomar conference on}\
+  (\BVOL~1, \BPGS\ 728--732).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Takahara%
+, Kurosu%
+, Namakura%
+, Ohno%
+\BCBL {}\ \BBA {} Itami%
+}{%
+Takahara%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2014}}%
+}]{%
+takahara2014study}
+\APACinsertmetastar {%
+takahara2014study}%
+\begin{APACrefauthors}%
+Takahara, H.%
+, Kurosu, S.%
+, Namakura, A.%
+, Ohno, K.%
+\BCBL {}\ \BBA {} Itami, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A study on improving performance of communication and
+  ranging in cooperative {UWB} radar and {IVC} system} {A study on improving
+  performance of communication and ranging in cooperative {UWB} radar and {IVC}
+  system}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {2014 International Conference on Connected Vehicles and
+  Expo (ICCVE)} {2014 international conference on connected vehicles and expo
+  (iccve)}\ (\BPGS\ 130--131).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Takahara%
+, Ohno%
+\BCBL {}\ \BBA {} Itami%
+}{%
+Takahara%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2012}}%
+}]{%
+takahara2012study}
+\APACinsertmetastar {%
+takahara2012study}%
+\begin{APACrefauthors}%
+Takahara, H.%
+, Ohno, K.%
+\BCBL {}\ \BBA {} Itami, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A study on UWB radar assisted by inter-vehicle
+  communication for safety applications} {A study on uwb radar assisted by
+  inter-vehicle communication for safety applications}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Vehicular Electronics and Safety (ICVES), 2012 IEEE
+  International Conference on} {Vehicular electronics and safety (icves), 2012
+  ieee international conference on}\ (\BPGS\ 99--104).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Takahara%
+, Ohno%
+\BCBL {}\ \BBA {} Itami%
+}{%
+Takahara%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2013}}%
+}]{%
+takahara2013study}
+\APACinsertmetastar {%
+takahara2013study}%
+\begin{APACrefauthors}%
+Takahara, H.%
+, Ohno, K.%
+\BCBL {}\ \BBA {} Itami, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A study on the iterative detection system using the SIC
+  in the cooperative {UWB} radar and {IVC} system} {A study on the iterative
+  detection system using the sic in the cooperative {UWB} radar and {IVC}
+  system}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {ITS Telecommunications {(ITST)}, 2013 13th International
+  Conference on} {Its telecommunications {(ITST)}, 2013 13th international
+  conference on}\ (\BPGS\ 187--192).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+TPC%
+}{%
+TPC%
+}{%
+{\protect \APACyear {2016}}%
+}]{%
+euTPC}
+\APACinsertmetastar {%
+euTPC}%
+\begin{APACrefauthors}%
+TPC, E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{April}{}.
+\newblock
+\APACrefbtitle {European Truck Platooning Challenge.} {European truck
+  platooning challenge.}
+\newblock
+\begin{APACrefURL}
+  [{2016-07-21}]\url{https://www.eutruckplatooning.com/default.aspx}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Vugts%
+}{%
+Vugts%
+}{%
+{\protect \APACyear {2010}}%
+}]{%
+vugts2010string}
+\APACinsertmetastar {%
+vugts2010string}%
+\begin{APACrefauthors}%
+Vugts, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2010}.
+\unskip\
+\newblock
+\APACrefbtitle {String-stable cacc design and experimental validation}
+  {String-stable cacc design and experimental validation}\
+  \APACtypeAddressSchool {\BUPhD}{}{}.
+\unskip\
+\newblock
+\APACaddressSchool {}{Technische Universiteit Eindhoven}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Ye%
+, Walsh%
+, Haigh%
+, Barton%
+\BCBL {}\ \BBA {} O'Flynn%
+}{%
+Ye%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2011}}%
+}]{%
+ye2011experimental}
+\APACinsertmetastar {%
+ye2011experimental}%
+\begin{APACrefauthors}%
+Ye, T.%
+, Walsh, M.%
+, Haigh, P.%
+, Barton, J.%
+\BCBL {}\ \BBA {} O'Flynn, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Experimental impulse radio {IEEE} 802.15. 4a UWB based
+  wireless sensor localization technology: Characterization, reliability and
+  ranging} {Experimental impulse radio {IEEE} 802.15. 4a uwb based wireless
+  sensor localization technology: Characterization, reliability and
+  ranging}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {{ISSC} 2011, 22nd {IET} Irish Signals and Systems
+  Conference, Dublin, Ireland. 23-24 Jun 2011.} {{ISSC} 2011, 22nd {IET} irish
+  signals and systems conference, dublin, ireland. 23-24 jun 2011.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Zhang%
+, Orlik%
+, Sahinoglu%
+, Molisch%
+\BCBL {}\ \BBA {} Kinney%
+}{%
+Zhang%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2009}}%
+}]{%
+zhang2009uwb}
+\APACinsertmetastar {%
+zhang2009uwb}%
+\begin{APACrefauthors}%
+Zhang, J.%
+, Orlik, P\BPBI V.%
+, Sahinoglu, Z.%
+, Molisch, A\BPBI F.%
+\BCBL {}\ \BBA {} Kinney, P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{UWB} systems for wireless sensor networks} {{UWB}
+  systems for wireless sensor networks}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Proceedings of the IEEE}{97}{2}{313--331}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

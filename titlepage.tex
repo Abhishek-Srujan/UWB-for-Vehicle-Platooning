@@ -1,0 +1,71 @@
+\begin{titlepage}
+	\begin{center}
+		
+		
+		\includegraphics[width=6cm,,height=1.5cm]{figures/logotue}
+		\hspace*{3cm}~%
+		\includegraphics[width=4cm,,height=1.5cm]{figures/logonxp} \\[2cm]
+		\large
+		\begin{center}
+			Department of Mathematics and Computer Science  \\
+			EIT ICT Masters Embedded Systems
+		\end{center}
+		\vspace*{10cm}
+		\setlength{\TPHorizModule}{1mm}
+		\setlength{\TPVertModule}{\TPHorizModule}
+		% Set the Paragraph Indent to zero, so the first line is not Indented
+		% Back-up the current value so it can be put back at the end of the title page
+		\newlength{\backupparindent}
+		\setlength{\backupparindent}{\parindent}
+		\setlength{\parindent}{0mm}			
+		% Begins a textbox at 72 mm from the left of the edge of the paper and 89 mm from the top
+		% The width of the textbox is 95 mm (167 - 72 mm)
+		% The height of the box cannot be defined, so it is your task to keep the text not too long
+		
+		\begin{textblock}{120}(52,89)
+			\vspace*{10mm}    
+			\noindent\makebox[\linewidth]{\rule{\textwidth}{1pt}}
+			\huge
+			\textbf{\doctitle \\}
+			\huge
+			\noindent\makebox[\linewidth]{\rule{\textwidth}{1.2pt}}    
+			\Large
+			\vspace*{6mm}
+			\textit{\docsubtitle}\\
+			\vspace*{10mm}
+			\Large
+			\me\\
+		\end{textblock}
+		
+		
+
+\begin{table}[h]
+	\centering
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{ll}
+			\textbf{First Supervisor NXP}        & dr. Gerardo Daalderop     \\
+			\textbf{Second Supervisor NXP}        & dr. ir. Bart Vermeulen    \\
+			\textbf{Supervisor University} & dr. Majid Nabi Najafabadi
+		\end{tabular}%
+	}
+\end{table}
+
+
+%\vfill
+%\vspace*{1cm}
+%\Large
+%\version
+
+\vfill
+%\docdate \\
+%\LARGE
+%Eindhoven University of Technology \\
+\Large 
+\vspace*{1cm}
+\Large
+Eindhoven, August 2016\
+
+% Put the Paragraph Indent back to its original value
+\setlength{\parindent}{\backupparindent}
+\end{center}
+\end{titlepage} 

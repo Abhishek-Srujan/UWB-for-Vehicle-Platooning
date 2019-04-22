@@ -1,0 +1,33 @@
+\select@language {british}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Direct radiation vs diffuse radiation \cite {Solar_radiation}\relax }}{1}{figure.caption.6}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces World solar DNI map \cite {Trieb.2010}\relax }}{2}{figure.caption.7}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Types of CSP collectors \cite {CSP_types}\relax }}{3}{figure.caption.8}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Gemasolar 20MW solar tower power plant in Sevilla, Spain \cite {Gemasolar}\relax }}{4}{figure.caption.9}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Optical losses in the heliostat field\relax }}{5}{figure.caption.10}
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Solar receiver \cite {Solar_receiver}\relax }}{5}{figure.caption.11}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Tubular receivers \cite {Wagner.2008}\relax }}{7}{figure.caption.12}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Flow layout of water/steam central receiver system \cite {water_steam}\relax }}{8}{figure.caption.13}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Flow layout of molten salt central receiver system \cite {Wagner.2008}\relax }}{8}{figure.caption.14}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Flow layout of liquid sodium central receiver system \cite {Falcone.1986}\relax }}{9}{figure.caption.15}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Flow layout of sodium/salt binary central receiver system \cite {Falcone.1986}\relax }}{9}{figure.caption.16}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Receiver peak flux value for different HTF and materials with respect to life cycles \cite {Falcone.1986}\relax }}{12}{figure.caption.17}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Eight possible fluid flow configuration by Wagner \cite {Wagner.2008}\relax }}{14}{figure.caption.19}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Solar tower for external and cavity receivers \cite {Feierabend.2010}\relax }}{15}{figure.caption.20}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Cavity receiver with three of four receiver panels assembled in PS10 power plant \cite {Feierabend.2010}\relax }}{15}{figure.caption.21}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Cavity inclination angle \cite {Ma.1993}\relax }}{16}{figure.caption.22}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Variation of Richardson number with respect to wind velocity for cavity receiver \cite {Teichel.2011} \relax }}{20}{figure.caption.27}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Two convection zones of the cavity receiver \cite {Flesch.2015} \relax }}{21}{figure.caption.28}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Receiver design methodology for tubular receivers\relax }}{24}{figure.caption.30}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Variation of tower height with respect to receiver thermal power \cite {Falcone.1986}\relax }}{30}{figure.caption.32}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Geometry of cavity receiver \cite {Feierabend.2010}\relax }}{33}{figure.caption.36}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Internal angle geometry of cavity receiver \cite {Feierabend.2010}\relax }}{33}{figure.caption.37}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Internal heat transfer area of the cavity receiver \cite {Siebers.1984}\relax }}{35}{figure.caption.40}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces General structure of the in-house solar tower power plant design and simulation software\relax }}{37}{figure.caption.42}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Modules of the devISEcrs design tool\relax }}{38}{figure.caption.43}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Class inheritance structure of the receiver module in devISEcrs\relax }}{39}{figure.caption.44}
+\addvspace {10\p@ }
+\addvspace {10\p@ }

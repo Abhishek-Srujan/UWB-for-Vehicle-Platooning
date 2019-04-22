@@ -1,0 +1,74 @@
+\nomenclatureentry{ADNI@[{DNI}]\begingroup Direct normal irradiance\nomeqref {1.0}|nompageref}{2}
+\nomenclatureentry{ACSP@[{CSP}]\begingroup Concentrated solar power\nomeqref {1.0}|nompageref}{2}
+\nomenclatureentry{AHTF@[{HTF}]\begingroup Heat transfer fluid\nomeqref {1.0}|nompageref}{2}
+\nomenclatureentry{ACRS@[{CRS}]\begingroup Central receiver systems\nomeqref {1.0}|nompageref}{2}
+\nomenclatureentry{SP@[{P}]\begingroup Power \nomunit{W}\nomeqref {2.0}|nompageref}{11}
+\nomenclatureentry{SH@[{H}]\begingroup Height \nomunit{m}\nomeqref {2.0}|nompageref}{11}
+\nomenclatureentry{SD@[{D}]\begingroup Diameter \nomunit{m}\nomeqref {2.0}|nompageref}{11}
+\nomenclatureentry{Zel@[{el}]\begingroup Electric\nomeqref {2.0}|nompageref}{11}
+\nomenclatureentry{G$\varepsilon$@[{$\varepsilon$}]\begingroup Allowable strain of the material \nomunit{-}\nomeqref {2.0}|nompageref}{12}
+\nomenclatureentry{G$\delta$@[{$\delta$}]\begingroup Thermal expansion coefficient \nomunit{1/m K}\nomeqref {2.0}|nompageref}{12}
+\nomenclatureentry{G$\upsilon$@[{$\upsilon$}]\begingroup  Poisson's ratio \nomunit{-}\nomeqref {2.0}|nompageref}{12}
+\nomenclatureentry{Sk@[{k}]\begingroup Thermal conductivity \nomunit{W/m K}\nomeqref {2.0}|nompageref}{12}
+\nomenclatureentry{Sd@[{d}]\begingroup Diameter of the receiver tube \nomunit{m}\nomeqref {2.0}|nompageref}{12}
+\nomenclatureentry{Sh@[{h}]\begingroup Heat transfer coefficient \nomunit{W/m$^2$ K}\nomeqref {2.0}|nompageref}{12}
+\nomenclatureentry{SR@[{R}]\begingroup Thermal Resistance \nomunit{K/W}\nomeqref {2.0}|nompageref}{12}
+\nomenclatureentry{Sq$_o$@[{q$_o$}]\begingroup Allowable peak flux \nomunit{W/m$^2$}\nomeqref {2.0}|nompageref}{12}
+\nomenclatureentry{Zcond@[{cond}]\begingroup Conduction\nomeqref {2.0}|nompageref}{12}
+\nomenclatureentry{Zo@[{o}]\begingroup Outer\nomeqref {2.0}|nompageref}{12}
+\nomenclatureentry{Zi@[{i}]\begingroup Inner\nomeqref {2.0}|nompageref}{12}
+\nomenclatureentry{Znat@[{nat}]\begingroup Natural\nomeqref {2.1}|nompageref}{17}
+\nomenclatureentry{Zfor@[{for}]\begingroup Forced\nomeqref {2.1}|nompageref}{17}
+\nomenclatureentry{Zmix@[{mix}]\begingroup Mixed\nomeqref {2.1}|nompageref}{17}
+\nomenclatureentry{ST@[{T}]\begingroup Temperature \nomunit{K}\nomeqref {2.2}|nompageref}{17}
+\nomenclatureentry{SNu@[{Nu}]\begingroup Nusselt number \nomunit{-}\nomeqref {2.2}|nompageref}{17}
+\nomenclatureentry{SPr@[{Pr}]\begingroup Prandtl number \nomunit{-}\nomeqref {2.2}|nompageref}{17}
+\nomenclatureentry{SRa@[{Ra}]\begingroup Rayleigh number \nomunit{-}\nomeqref {2.2}|nompageref}{17}
+\nomenclatureentry{Zf@[{f}]\begingroup Film\nomeqref {2.2}|nompageref}{17}
+\nomenclatureentry{Zamb@[{amb}]\begingroup Ambient\nomeqref {2.2}|nompageref}{17}
+\nomenclatureentry{Zs@[{s}]\begingroup Surface\nomeqref {2.2}|nompageref}{17}
+\nomenclatureentry{G$\beta$@[{$\beta$}]\begingroup Volumetric expansion coefficient \nomunit{1/K}\nomeqref {2.5}|nompageref}{18}
+\nomenclatureentry{G$\nu$@[{$\nu$}]\begingroup Kinematic viscosity \nomunit{$m^2/s$}\nomeqref {2.5}|nompageref}{18}
+\nomenclatureentry{S$c_p$@[{$c_p$}]\begingroup Specific heat \nomunit{J/kgK}\nomeqref {2.6}|nompageref}{18}
+\nomenclatureentry{G$\mu$@[{$\mu$}]\begingroup Dynamic viscosity \nomunit{$kg/ms$}\nomeqref {2.6}|nompageref}{18}
+\nomenclatureentry{G$\rho$@[{$\rho$}]\begingroup Density \nomunit{$kg/m^3$}\nomeqref {2.6}|nompageref}{18}
+\nomenclatureentry{SGr@[{Gr}]\begingroup Grashof number \nomunit{-}\nomeqref {2.7}|nompageref}{18}
+\nomenclatureentry{SRe@[{Re}]\begingroup Reynolds number \nomunit{-}\nomeqref {2.8}|nompageref}{18}
+\nomenclatureentry{S$u_{wind}$@[{$u_{wind}$}]\begingroup Wind velocity \nomunit{m/s}\nomeqref {2.9}|nompageref}{18}
+\nomenclatureentry{S$K_s$@[{$K_s$}]\begingroup Surface roughness \nomunit{-}\nomeqref {2.10}|nompageref}{18}
+\nomenclatureentry{G$\sigma$@[{$\sigma$}]\begingroup Stefan-Boltzmann constant \nomunit{$W / m^2 K^4$}\nomeqref {2.11}|nompageref}{19}
+\nomenclatureentry{G$\epsilon$@[{$\epsilon$}]\begingroup Emissivity \nomunit{-}\nomeqref {2.11}|nompageref}{19}
+\nomenclatureentry{Zave@[{ave}]\begingroup Average\nomeqref {2.11}|nompageref}{19}
+\nomenclatureentry{SRi@[{Ri}]\begingroup Richardson number \nomunit{-}\nomeqref {2.12}|nompageref}{20}
+\nomenclatureentry{G$\eta$@[{$\eta$}]\begingroup Efficiency \nomunit{-}\nomeqref {3.0}|nompageref}{25}
+\nomenclatureentry{SSM@[{SM}]\begingroup Solar multiple \nomunit{-}\nomeqref {3.0}|nompageref}{25}
+\nomenclatureentry{Zth@[{th}]\begingroup Thermal\nomeqref {3.0}|nompageref}{25}
+\nomenclatureentry{Zpb@[{pb}]\begingroup Power block\nomeqref {3.0}|nompageref}{25}
+\nomenclatureentry{Zhtf@[{htf}]\begingroup Heat transfer fluid\nomeqref {3.2}|nompageref}{26}
+\nomenclatureentry{Sr@[{r}]\begingroup Radius \nomunit{m}\nomeqref {3.3}|nompageref}{26}
+\nomenclatureentry{Sn@[{n}]\begingroup Count \nomunit{-}\nomeqref {3.3}|nompageref}{26}
+\nomenclatureentry{Ztube@[{tube}]\begingroup Receiver tube\nomeqref {3.3}|nompageref}{26}
+\nomenclatureentry{S$\dot m$@[{$\dot m$}]\begingroup Mass flow rate \nomunit {kg/s}\nomeqref {3.7}|nompageref}{27}
+\nomenclatureentry{S$\Delta$ P@[{$\Delta$ P}]\begingroup Pressure difference \nomunit{$N/m^2$}\nomeqref {3.8}|nompageref}{27}
+\nomenclatureentry{Sv@[{v}]\begingroup Velocity \nomunit {m/s}\nomeqref {3.8}|nompageref}{27}
+\nomenclatureentry{Sf@[{f}]\begingroup Darcy friction factor \nomunit{-}\nomeqref {3.8}|nompageref}{27}
+\nomenclatureentry{Sg@[{g}]\begingroup Acceleration due to gravity \nomunit {$m/s^2$}\nomeqref {3.9}|nompageref}{27}
+\nomenclatureentry{Ztower@[{tower}]\begingroup Solar tower\nomeqref {3.9}|nompageref}{27}
+\nomenclatureentry{Znet@[{net}]\begingroup Net\nomeqref {3.10}|nompageref}{28}
+\nomenclatureentry{SW@[{W}]\begingroup Power \nomunit{W}\nomeqref {3.11}|nompageref}{28}
+\nomenclatureentry{S$\dot Q$@[{$\dot Q$}]\begingroup Heat energy \nomunit{KW}\nomeqref {3.25}|nompageref}{31}
+\nomenclatureentry{Ztot@[{tot}]\begingroup Total\nomeqref {3.25}|nompageref}{31}
+\nomenclatureentry{Zref@[{ref}]\begingroup Reflection\nomeqref {3.25}|nompageref}{31}
+\nomenclatureentry{Zconv@[{conv}]\begingroup Convection\nomeqref {3.25}|nompageref}{31}
+\nomenclatureentry{Zrad@[{rad}]\begingroup Radiation\nomeqref {3.25}|nompageref}{31}
+\nomenclatureentry{G$\alpha$@[{$\alpha$}]\begingroup Absorptance \nomunit{-}\nomeqref {3.25}|nompageref}{31}
+\nomenclatureentry{Zeff@[{eff}]\begingroup Effective\nomeqref {3.25}|nompageref}{31}
+\nomenclatureentry{Zinc@[{inc}]\begingroup Incident\nomeqref {3.25}|nompageref}{31}
+\nomenclatureentry{Zrec@[{rec}]\begingroup Receiver\nomeqref {3.25}|nompageref}{31}
+\nomenclatureentry{Zabs@[{abs}]\begingroup Absorber\nomeqref {3.25}|nompageref}{31}
+\nomenclatureentry{Zenv@[{env}]\begingroup Envelope\nomeqref {3.25}|nompageref}{31}
+\nomenclatureentry{SA@[{A}]\begingroup Area \nomunit{$m^2$}\nomeqref {3.26}|nompageref}{31}
+\nomenclatureentry{SL@[{L}]\begingroup Length \nomunit{m}\nomeqref {3.27}|nompageref}{31}
+\nomenclatureentry{Zc@[{c}]\begingroup Characteristic\nomeqref {3.27}|nompageref}{31}
+\nomenclatureentry{G$\theta$@[{$\theta$}]\begingroup Cavity opening angle \nomunit{-}\nomeqref {3.31}|nompageref}{32}
+\nomenclatureentry{Zw@[{w}]\begingroup Wall\nomeqref {3.42}|nompageref}{35}

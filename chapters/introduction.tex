@@ -1,0 +1,97 @@
+\nomenclature[A]{UWB}{Ultra-Wide Band}
+\nomenclature[A]{TP-UWB}{Test Platform for evaluation and analysis of UWB}
+\nomenclature[A]{PRF}{Pulse Repetition Frequency}
+\nomenclature[A]{SFD}{Start of the frame Delimiter}
+\nomenclature[A]{ADAS}{Advanced Driver Assistance Systems}
+\nomenclature[A]{ESP}{Electronic Stabilization Program}
+\nomenclature[A]{ABS}{Anti-lock Braking System}
+\nomenclature[A]{CACC}{Cooperative-Adaptive Cruise Control}
+\nomenclature[A]{V2V}{Vehicle to Vehicle Communication}
+\nomenclature[A]{PER}{Packet Error Ratio}
+\nomenclature[A]{ITS}{Intelligent Transport System}
+\nomenclature[A]{IVC}{Inter Vehicle Communication}
+
+\section{Context}
+Automated Driving is seen as one of the key innovation areas shaping our future mobility and quality of life. The main drivers for higher levels of automated driving are the following:
+\begin{itemize}
+	\item Safety: Reduce accidents caused by human errors.
+	\item Efficiency and environmental objectives: Increase transport system efficiency and reduce time in congested traffic. Smoother traffic will help to decrease the energy consumption and emissions of the vehicles.
+	\item Comfort: Enable user's freedom for other activities when automated systems are active.
+	\item Social inclusion: Ensure mobility for all, including elderly and impaired users.
+	\item Accessibility: Facilitate access to city centers.
+\end{itemize}
+In technology terms, the advancement towards highly automated driving is seen as an evolutionary process to ensure that all involved stakeholders can develop and evolve with adequate pace. This process already started with the development of Advanced Driver Assistance Systems (ADAS)  like Anti-lock Braking System (ABS) and Electronic Stabilization Program (ESP), and will progressively apply to more functions and environments.
+
+For the domain of commercial vehicles, especially trucks, platooning (based on Cooperative- Adaptive Cruise Control, i.e., C-ACC) is regarded as one of the most promising applications based on automated driving technologies, that improve safety (reduction of human error), efficiency (approx. 10\% fuel reduction, transport or labor efficiency), and comfort for the driver. Platooning implies that the platoon is led by a vehicle which is driven by a professional driver. This driver must have a valid license and is assumed to have additional training for leading a platoon. The following vehicles are under automated longitudinal and lateral control. The following vehicle driver must be able to take over control of the vehicle in the event of a controlled or unforeseen dissolving of the platoon. Following are the advantages of platooning for trucks:
+\begin{itemize}
+	\item Asset Utilization Optimization: Reduced truck idle time and enhanced efficiency.
+	\item Fuel Consumption: In the Peloton Technology Inc. test with CR England, platooning saved 7\% at 65 mph - 10\% for the rear truck and 4.5\% for the lead truck \cite{fleetOwner}. NREL conducted track testing of three vehicles - two platooned trucks and one control truck- at varying speeds (55-70 mph), platooning distances (20-75 feet), and gross vehicle weights (65,000-80,000 pounds), platooning reduced fuel consumption at all test speeds, platooning distances, and payload weights. The lead truck demonstrated fuel savings up to 5.3\%; the trailing truck saved up to 9.7\%; and together, the platooning pair saved up to 6.4\% \cite{NREL}.
+	\item Driver efficiency optimization: Driving or resting times.
+	
+\end{itemize}
+\section{Motivation}
+The control strategy for the platoon will be a combination of local control where each vehicle individually senses its environment and global control where the lead vehicle decides set-points e.g. following distance and speed but also being informed about the status and capabilities of all (heterogenous) vehicles in the platoon. Global control may also be required to avoid oscillations in the platoon as these will have a detrimental effect on fuel efficiency, safety and also passenger comfort. To achieve global control over the platoon, a communication system that interconnects the vehicles is needed (V2V Communication). Currently, this communication is only implemented with 5.9 GHz IEEE 802.11p \cite{802.11pStandard}. In recent two-truck platooning \cite{euTPC} situation, trucks were traveling at 80 Km/hr (22.5 m/sec) with 12.5m distance between the trucks (i.e., 0.5 sec reaction time), wherein messages between the leading truck and the following truck is exchanged at 25 Hz (40 ms). Global control presents significant technical challenges when the safety requirements are considered, and it is important to have a standalone backup communication mechanism to bolster the reliability of the system.
+
+UWB communication may be a suitable standalone backup communication mechanism considering the following advantages and disadvantages:\\
+\textbf{Advantages}
+\begin{itemize}
+	\item Larger Bandwidth (\textgreater 500 MHz) provides enhanced resistance to narrowband interference, multi-path resistance, and more accurate ranging estimates.
+	\item Short time domain pulses (\textless 2 ns) of UWB systems make them ideal for combined communication and positioning.
+	\item Ultra low power consumption, low power spectral density, low cost and lower bit error rate.
+	\item Lower probability of intercept and detection.\\
+\end{itemize} 
+\textbf{Disadvantages}\\
+Need to balance:
+\begin{itemize}
+	\item Spectrum requirements for applications
+	\item Emission limits for applications
+	\item Interference risk to sensitive radio services
+\end{itemize}
+
+UWB Technology has to fulfill the following objectives to be integrated as a secondary backup communication channel to the existing WiFi-p platooning system: 
+\begin{itemize}
+	\item UWB communication must not interfere with WiFi-p communication or vice versa.
+	\item Latency requirements of the platooning application need to be met.
+	\item It should be reliable in challenging conditions like varying relative speeds and range.
+	\item ECC requirements should be fulfilled when applied commercially.
+\end{itemize}
+
+In this thesis, we investigate UWB technology to decide if it can be used as a secondary independent backup channel for platooning.
+
+\section{Problem Statement}
+We deduce the problem statement for our thesis based on our motivation. Currently, there is no information available to determine the suitability of using UWB as a secondary independent backup channel for platooning. We investigate UWB technology in an inter-vehicle environment to ascertain if it can be used as a secondary independent backup channel for platooning. We define a test approach to evaluate the question and implement a test platform that enables us to investigate the test approach in different test set-ups.
+
+\section{Research Questions}
+We break the problem statement into a set of research questions which the thesis answers:
+
+\begin{enumerate}
+	\item Research Question RQ\_01: What is the impact on the performance (Packet Error Ratio (PER), Message Error Ratio (MER), message latency, packet latency) of UWB in the presence of WiFi-p and vice-versa?
+	\begin{itemize}
+		\item What is the effect of distance between the WiFi-p transceivers and UWB transceivers on interference (MER)?
+		\item What is the worst case interference of UWB on WiFi-p or vice-versa?
+		\item What is the effect of Channel, Preamble Length, PRF (Pulse Repetition Frequency), Standard SFD (Start of the Frame Delimiter), Non-standard SFD, Smart Power enablement, Preamble Code on the performance of UWB link in the presence of WiFi-p interference (MER)?
+	\end{itemize}
+	
+	\item Research Question RQ\_02: Sensitivity analysis of performance under various conditions:
+	\begin{itemize}
+		\item What is the performance of UWB communication between trucks in platooning mode with respect to speed/acceleration differences?
+		\item Evaluate if range could cause negative interference (nulls) at relative distances?
+	\end{itemize}
+	\item Research Question RQ\_03: What is the ranging accuracy that can be achieved through UWB when the trucks are operating in platooning mode?
+	\begin{itemize}
+		\item What is the effect of standard SFD and Non-standard SFD on ranging accuracy?
+	\end{itemize}
+	
+	\item Research Question RQ\_04: Which configuration is the best configuration of UWB for platooning application?
+	
+\end{enumerate}
+\section{Approach}
+To evaluate the performance of UWB in the presence of WiFi-p and vice-versa, we setup 2 MK5s' \cite{cohdaMK5} emitting WiFi-p signals at time instant 0, 15, 25 and 30 ms of a 40 ms time slot. The TP-UWB platform is set to transfer and receive four packets per message in a time slot of 40 ms to have maximum overlap between WiFi-p and UWB transmission. We choose the operating channel of WiFi-p such that we get close to the UWB frequency to the maximal extent to measure the maximum effect that interference can have, and measure the performance of UWB link by sweeping various parameters such as channels, Pulse Repetition Frequency (PRF), preamble lengths, preamble codes, Standard or non-standard SFD and Smart Power enablement. We measure the PER or MER induced by the setup with or without interference for both UWB and WiFi-p and analyze the results. We conduct the experiments by keeping the transceivers apart and at very close distance to each other. Also, we evaluate the worst case interference. We choose the best configuration of UWB such that it operates with least possible interference to WiFi-p.
+
+To perform the sensitivity analysis, we evaluate the performance of UWB in a typical inter-vehicle and outdoor environment by sweeping parameters at various distances. For this, we conduct experiments outdoors with zero relative velocity. We determine the ranging accuracy that can be achieved through UWB. Also, we determine the performance of UWB link with respect to speed or acceleration difference for selected priority configuration. For this, we perform experiments by keeping one car stationary and move another car so that speed or acceleration difference can be induced. Analyzing all the results, we determine the best configuration of UWB for platooning application.
+
+To conduct the experiments, we make use of the automated test platform which eases the effort and increases the speed of performing the tests. Using the automated test platform, TP-UWB,  several combinations of test cases can be executed for several runs without any manual effort thereby overcoming the need to test each configuration one after the other manually. After the completion of an experiment, we use MATLAB post-processing script to extract useful information out of the logged data during the tests. 
+
+\section{Thesis Overview}
+The remainder of this thesis is organized as follows. In Chapter 2, we provide a background about Intelligent Transport System (ITS), vehicle platooning, vehicular RF channel, WiFi-p, UWB and UWB ranging.
+Also, we provide background information about the research tools (LPCXpresso 4337 development board and DecaWave DW1000) that are used to study the UWB technology in an inter-vehicular and outdoor environment. Chapter 3 presents the related work about UWB for Inter-Vehicle Communication (IVC), interference of UWB on narrowband communication and vice-versa, UWB ranging and highlights the novel aspects of the current work. In Chapter 4, we present the set of measurement plans that are designed to study the suitability of UWB as a secondary independent backup channel for platooning. We also describe the requirements of the test platform TP-UWB. In Chapter 5, we discuss the design choices, and the implementation details of our test platform, TP-UWB, that enables us to execute the measurement plans. In Chapter 6, we discuss the duty cycle requirements for UWB. Chapter 7 discusses the experiments and the results of the measurement plans. We explain the different test set-ups that were used to perform experiments and elucidate the results of the tests conducted. Finally, we summarize the conclusions of our work and present the future work in Chapter 8.
